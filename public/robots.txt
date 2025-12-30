@@ -1,0 +1,13 @@
+# Robots.txt pour Dyvase
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://dyvase.com/sitemap.xml
+
+# Crawl-delay (optionnel)
+Crawl-delay: 0
+
+# Disallow admin pages (si vous en avez)
+# Disallow: /admin/
+
