@@ -100,7 +100,7 @@ export default function Contact() {
                     <path d="M16 24L22 30L32 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </div>
-                <h3>Message envoyé !</h3>
+                <h3>La demande de devis a été envoyée !</h3>
                 <p>Merci de nous avoir contactés. Nous vous répondrons sous 24 heures.</p>
                 <button 
                   className="btn btn-secondary"
@@ -212,7 +212,7 @@ export default function Contact() {
                       Envoi en cours...
                     </>
                   ) : (
-                    'Envoyer le message'
+                    'Envoyer la demande de devis'
                   )}
                 </motion.button>
               </form>
