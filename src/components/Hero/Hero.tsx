@@ -78,7 +78,7 @@ export default function Hero() {
             variants={itemVariants}
           >
             <div className="hero__stat">
-              <span className="hero__stat-number">150+</span>
+              <span className="hero__stat-number">+20</span>
               <span className="hero__stat-label">Projets livrés</span>
             </div>
             <div className="hero__stat-divider" />
@@ -88,7 +88,7 @@ export default function Hero() {
             </div>
             <div className="hero__stat-divider" />
             <div className="hero__stat">
-              <span className="hero__stat-number">5+</span>
+              <span className="hero__stat-number">2+</span>
               <span className="hero__stat-label">Années d'expérience</span>
             </div>
           </motion.div>
