@@ -166,8 +166,8 @@ export default function FAQ() {
             <h3>Vous ne trouvez pas la réponse à votre question ?</h3>
             <p>Contactez-nous directement, nous serons ravis de vous aider !</p>
             <div className="faq-cta__buttons">
-              <a href="tel:+33749277215" className="btn btn-primary">
-                07 49 27 72 15
+              <a href="https://wa.me/33651504173" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                06 51 50 41 73
               </a>
               <a href="mailto:dyvase.contact@gmail.com" className="btn btn-secondary">
                 dyvase.contact@gmail.com

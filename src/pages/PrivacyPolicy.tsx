@@ -29,9 +29,9 @@ export default function PrivacyPolicy() {
           >
             <h2>1. Introduction</h2>
             <p>
-              Dyvase accorde une grande importance à la protection de vos données personnelles. 
-              Cette politique de confidentialité explique comment nous collectons, utilisons, 
-              stockons et protégeons vos informations personnelles conformément au Règlement 
+              Dyvase accorde une grande importance à la protection de vos données personnelles.
+              Cette politique de confidentialité explique comment nous collectons, utilisons,
+              stockons et protégeons vos informations personnelles conformément au Règlement
               Général sur la Protection des Données (RGPD).
             </p>
 
@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
               <strong>Dyvase</strong><br />
               Mulhouse, France<br />
               Email : <a href="mailto:dyvase.contact@gmail.com">dyvase.contact@gmail.com</a><br />
-              Téléphone : <a href="tel:+33749277215">07 49 27 72 15</a>
+              WhatsApp : <a href="https://wa.me/33651504173" target="_blank" rel="noopener noreferrer">06 51 50 41 73</a>
             </p>
 
             <h2>3. Données collectées</h2>
@@ -113,7 +113,7 @@ export default function PrivacyPolicy() {
 
             <h2>8. Sécurité des données</h2>
             <p>
-              Nous mettons en œuvre des mesures techniques et organisationnelles appropriées 
+              Nous mettons en œuvre des mesures techniques et organisationnelles appropriées
               pour protéger vos données personnelles contre :
             </p>
             <ul>
@@ -123,7 +123,7 @@ export default function PrivacyPolicy() {
               <li>La destruction</li>
             </ul>
             <p>
-              Nos mesures incluent : chiffrement SSL/TLS, sauvegardes régulières, 
+              Nos mesures incluent : chiffrement SSL/TLS, sauvegardes régulières,
               contrôle d'accès strict, et mises à jour de sécurité.
             </p>
 
@@ -141,7 +141,7 @@ export default function PrivacyPolicy() {
               <li><strong>Droit de retirer votre consentement</strong> : à tout moment</li>
             </ul>
             <p>
-              Pour exercer ces droits, contactez-nous à : 
+              Pour exercer ces droits, contactez-nous à :
               <a href="mailto:dyvase.contact@gmail.com">dyvase.contact@gmail.com</a>
             </p>
 
@@ -160,21 +160,21 @@ export default function PrivacyPolicy() {
 
             <h2>11. Transferts internationaux</h2>
             <p>
-              Certains de nos prestataires peuvent être situés en dehors de l'Union Européenne. 
-              Dans ce cas, nous nous assurons que des garanties appropriées sont mises en place 
+              Certains de nos prestataires peuvent être situés en dehors de l'Union Européenne.
+              Dans ce cas, nous nous assurons que des garanties appropriées sont mises en place
               (clauses contractuelles types, Privacy Shield, etc.).
             </p>
 
             <h2>12. Modifications</h2>
             <p>
-              Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. 
-              La version la plus récente sera toujours disponible sur cette page avec la date de 
+              Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment.
+              La version la plus récente sera toujours disponible sur cette page avec la date de
               dernière mise à jour.
             </p>
 
             <h2>13. Réclamation</h2>
             <p>
-              Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une 
+              Si vous estimez que vos droits ne sont pas respectés, vous pouvez introduire une
               réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés) :
             </p>
             <p>
@@ -188,12 +188,12 @@ export default function PrivacyPolicy() {
 
             <h2>14. Contact</h2>
             <p>
-              Pour toute question concernant cette politique de confidentialité ou vos données 
+              Pour toute question concernant cette politique de confidentialité ou vos données
               personnelles, contactez-nous :
             </p>
             <ul>
               <li>Email : <a href="mailto:dyvase.contact@gmail.com">dyvase.contact@gmail.com</a></li>
-              <li>Téléphone : <a href="tel:+33749277215">07 49 27 72 15</a></li>
+              <li>WhatsApp : <a href="https://wa.me/33651504173" target="_blank" rel="noopener noreferrer">06 51 50 41 73</a></li>
               <li>Adresse : Dyvase, Mulhouse, France</li>
             </ul>
           </motion.div>

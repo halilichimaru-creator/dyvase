@@ -34,7 +34,7 @@ export default function LegalNotice() {
               Agence web<br />
               Mulhouse, France<br />
               Email : <a href="mailto:dyvase.contact@gmail.com">dyvase.contact@gmail.com</a><br />
-              Téléphone : <a href="tel:+33749277215">07 49 27 72 15</a>
+              WhatsApp : <a href="https://wa.me/33651504173" target="_blank" rel="noopener noreferrer">06 51 50 41 73</a>
             </p>
 
             <h3>Directeur de publication</h3>
@@ -54,62 +54,62 @@ export default function LegalNotice() {
 
             <h2>3. Propriété intellectuelle</h2>
             <p>
-              L'ensemble du contenu de ce site (textes, images, vidéos, logos, icônes, etc.) 
+              L'ensemble du contenu de ce site (textes, images, vidéos, logos, icônes, etc.)
               est la propriété exclusive de Dyvase, sauf mention contraire.
             </p>
             <p>
-              Toute reproduction, distribution, modification, adaptation, retransmission ou 
-              publication de ces différents éléments est strictement interdite sans l'accord 
+              Toute reproduction, distribution, modification, adaptation, retransmission ou
+              publication de ces différents éléments est strictement interdite sans l'accord
               exprès par écrit de Dyvase.
             </p>
 
             <h2>4. Données personnelles</h2>
             <p>
-              Conformément au Règlement Général sur la Protection des Données (RGPD), vous 
-              disposez d'un droit d'accès, de rectification, de suppression et d'opposition 
+              Conformément au Règlement Général sur la Protection des Données (RGPD), vous
+              disposez d'un droit d'accès, de rectification, de suppression et d'opposition
               aux données personnelles vous concernant.
             </p>
             <p>
-              Pour exercer ces droits, vous pouvez nous contacter à l'adresse : 
+              Pour exercer ces droits, vous pouvez nous contacter à l'adresse :
               <a href="mailto:dyvase.contact@gmail.com">dyvase.contact@gmail.com</a>
             </p>
             <p>
-              Pour plus d'informations sur la gestion de vos données personnelles, 
+              Pour plus d'informations sur la gestion de vos données personnelles,
               consultez notre <a href="/politique-confidentialite">Politique de confidentialité</a>.
             </p>
 
             <h2>5. Cookies</h2>
             <p>
-              Ce site utilise des cookies pour améliorer l'expérience utilisateur et 
-              analyser le trafic. En naviguant sur ce site, vous acceptez l'utilisation 
+              Ce site utilise des cookies pour améliorer l'expérience utilisateur et
+              analyser le trafic. En naviguant sur ce site, vous acceptez l'utilisation
               de ces cookies.
             </p>
             <p>
-              Vous pouvez désactiver les cookies dans les paramètres de votre navigateur, 
+              Vous pouvez désactiver les cookies dans les paramètres de votre navigateur,
               mais certaines fonctionnalités du site pourraient ne plus être disponibles.
             </p>
 
             <h2>6. Responsabilité</h2>
             <p>
-              Dyvase s'efforce d'assurer l'exactitude et la mise à jour des informations 
-              diffusées sur ce site. Toutefois, Dyvase ne peut garantir l'exactitude, 
+              Dyvase s'efforce d'assurer l'exactitude et la mise à jour des informations
+              diffusées sur ce site. Toutefois, Dyvase ne peut garantir l'exactitude,
               la précision ou l'exhaustivité des informations mises à disposition.
             </p>
             <p>
-              Dyvase ne pourra être tenu responsable des dommages directs ou indirects 
+              Dyvase ne pourra être tenu responsable des dommages directs ou indirects
               résultant de l'accès au site ou de l'utilisation de celui-ci.
             </p>
 
             <h2>7. Liens hypertextes</h2>
             <p>
-              Le site dyvase.com peut contenir des liens vers d'autres sites internet. 
-              Dyvase n'exerce aucun contrôle sur ces sites et décline toute responsabilité 
+              Le site dyvase.com peut contenir des liens vers d'autres sites internet.
+              Dyvase n'exerce aucun contrôle sur ces sites et décline toute responsabilité
               quant à leur contenu.
             </p>
 
             <h2>8. Droit applicable</h2>
             <p>
-              Les présentes mentions légales sont régies par le droit français. 
+              Les présentes mentions légales sont régies par le droit français.
               En cas de litige, les tribunaux français seront seuls compétents.
             </p>
 
@@ -119,7 +119,7 @@ export default function LegalNotice() {
             </p>
             <ul>
               <li>Par email : <a href="mailto:dyvase.contact@gmail.com">dyvase.contact@gmail.com</a></li>
-              <li>Par téléphone : <a href="tel:+33749277215">07 49 27 72 15</a></li>
+              <li>Par WhatsApp : <a href="https://wa.me/33651504173" target="_blank" rel="noopener noreferrer">06 51 50 41 73</a></li>
               <li>Par courrier : Dyvase, Mulhouse, France</li>
             </ul>
           </motion.div>
