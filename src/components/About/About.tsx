@@ -47,10 +47,10 @@ const values = [
 ]
 
 const stats = [
-  { value: '150+', label: 'Projets réalisés' },
-  { value: '100+', label: 'Clients satisfaits' },
-  { value: '5+', label: 'Années d\'expérience' },
-  { value: '15+', label: 'Membres d\'équipe' },
+  { value: '20+', label: 'Projets réalisés' },
+  { value: '98%', label: 'Clients satisfaits' },
+  { value: '2+', label: 'Années d\'expérience' },
+  { value: '10+', label: 'Membres d\'équipe' },
 ]
 
 export default function About() {
