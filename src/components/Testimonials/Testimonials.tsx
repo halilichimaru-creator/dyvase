@@ -73,7 +73,7 @@ export default function Testimonials() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <span className="testimonials__logos-label">Ils nous font confiance</span>
+            <span className="testimonials__logos-label">Bientôt disponible...</span>
             <div className="testimonials__logos-grid">
               <motion.div 
                 className="testimonials__logo"
@@ -82,7 +82,7 @@ export default function Testimonials() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.1 }}
               >
-                MP Carrelage
+                ...
               </motion.div>
             </div>
           </motion.div>
