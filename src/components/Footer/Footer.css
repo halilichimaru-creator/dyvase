@@ -15,7 +15,7 @@
 
 @media (min-width: 768px) {
   .footer__grid {
-    grid-template-columns: 1.5fr repeat(3, 1fr);
+    grid-template-columns: 1.5fr repeat(4, 1fr);
     gap: var(--space-xl);
   }
 }
@@ -199,12 +199,10 @@
   width: 100%;
   max-width: 800px;
   height: 1px;
-  background: linear-gradient(90deg, 
-    transparent, 
-    var(--color-mint), 
-    var(--color-lavender), 
-    var(--color-peach), 
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      var(--color-mint),
+      var(--color-lavender),
+      var(--color-peach),
+      transparent);
 }
-

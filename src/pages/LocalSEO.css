@@ -1,0 +1,102 @@
+.local-hero {
+    padding-top: var(--space-4xl);
+    background: var(--color-background);
+    text-align: center;
+}
+
+.local-hero__subtitle {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: var(--space-xl) auto;
+    color: var(--color-text-secondary);
+}
+
+.local-hero__actions {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    margin-top: var(--space-2xl);
+}
+
+.local-features__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.local-feature-card {
+    background: white;
+    padding: var(--space-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.local-feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.local-feature-card__icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-lg);
+}
+
+.local-content__layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .local-content__layout {
+        grid-template-columns: 1.2fr 1fr;
+    }
+}
+
+.local-content__text h2 {
+    font-size: 2.25rem;
+    margin-bottom: var(--space-xl);
+}
+
+.local-content__text p {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-secondary);
+}
+
+.check-list {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-xl);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+}
+
+.check-list li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.check-list li::before {
+    content: "✓";
+    color: var(--color-mint);
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+    .local-hero__actions {
+        flex-direction: column;
+    }
+
+    .local-content__text h2 {
+        font-size: 1.75rem;
+    }
+}

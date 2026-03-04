@@ -1,67 +1,70 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
+import { Link } from 'react-router-dom'
 import './Services.css'
 
 const services = [
   {
     id: 1,
+    slug: '/services/creation-site-vitrine',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 8C4 6.89543 4.89543 6 6 6H26C27.1046 6 28 6.89543 28 8V24C28 25.1046 27.1046 26 26 26H6C4.89543 26 4 25.1046 4 24V8Z" stroke="currentColor" strokeWidth="2"/>
-        <path d="M8 12L12 16L8 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M16 20H24" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M4 8C4 6.89543 4.89543 6 6 6H26C27.1046 6 28 6.89543 28 8V24C28 25.1046 27.1046 26 26 26H6C4.89543 26 4 25.1046 4 24V8Z" stroke="currentColor" strokeWidth="2" />
+        <path d="M8 12L12 16L8 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M16 20H24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
-    title: 'Développement Web',
-    description: 'Sites web sur-mesure avec les technologies les plus récentes. Du design responsive aux applications web complexes, nous livrons des solutions performantes.',
-    features: ['React & Next.js', 'Node.js & APIs', 'Base de données', 'Déploiement Cloud'],
+    title: 'Création Site Vitrine',
+    description: 'Sites web sur-mesure pour artisans et PME. Présentez votre activité avec un design élégant et une performance optimale.',
+    features: ['Design sur-mesure', 'Optimisé SEO', 'Mobile First', 'Maintenance incluse'],
     color: 'mint',
   },
   {
     id: 2,
+    slug: '/services/creation-site-ecommerce',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" strokeWidth="2"/>
-        <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2"/>
-        <path d="M4 22L10 16L14 20L20 14L28 22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M6 6H10L12 18H24L26 10H12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="14" cy="24" r="2" stroke="currentColor" strokeWidth="2" />
+        <circle cx="22" cy="24" r="2" stroke="currentColor" strokeWidth="2" />
       </svg>
     ),
-    title: 'Design UI/UX',
-    description: 'Des interfaces élégantes que vos utilisateurs adorent. Nous concevons des expériences intuitives basées sur la recherche et l\'esthétique moderne.',
-    features: ['Recherche utilisateur', 'Maquettes', 'Prototypage', 'Design Systems'],
+    title: 'Site E-commerce',
+    description: 'Vendez vos produits en ligne. Nous créons des boutiques performantes avec paiement sécurisé et gestion facile.',
+    features: ['Paiement sécurisé', 'Gestion de stock', 'Conversion optimisée', 'Analytique'],
     color: 'lavender',
   },
   {
     id: 3,
+    slug: '/services/audit-seo-performance',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16 4L28 10V22L16 28L4 22V10L16 4Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-        <path d="M16 16V28" stroke="currentColor" strokeWidth="2"/>
-        <path d="M28 10L16 16L4 10" stroke="currentColor" strokeWidth="2"/>
-        <path d="M16 4V16" stroke="currentColor" strokeWidth="2"/>
+        <path d="M16 4V8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M16 24V28" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M4 16H8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M24 16H28" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <circle cx="16" cy="16" r="6" stroke="currentColor" strokeWidth="2" />
+        <circle cx="16" cy="16" r="10" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" />
       </svg>
     ),
-    title: 'Identité de Marque',
-    description: 'Des identités visuelles distinctives qui marquent les esprits. Nous créons des expériences de marque cohérentes sur tous les supports.',
-    features: ['Création de logo', 'Système de couleurs', 'Typographie', 'Charte graphique'],
+    title: 'Expert SEO & Performance',
+    description: 'Devenez numéro 1 sur Google. Nous optimisons votre visibilité et votre vitesse pour attirer plus de clients.',
+    features: ['Audit complet', 'SEO technique', 'Core Web Vitals', 'Stratégie locale'],
     color: 'peach',
   },
   {
     id: 4,
+    slug: '#contact',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16 4V8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M16 24V28" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M4 16H8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M24 16H28" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <circle cx="16" cy="16" r="6" stroke="currentColor" strokeWidth="2"/>
-        <circle cx="16" cy="16" r="10" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4"/>
+        <rect x="4" y="4" width="24" height="24" rx="12" stroke="currentColor" strokeWidth="2" />
+        <path d="M12 12L20 20M20 12L12 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
-    title: 'SEO & Performance',
-    description: 'Optimisez votre visibilité et votre vitesse. Nous garantissons un bon référencement et un chargement ultra-rapide sur tous les appareils.',
-    features: ['SEO technique', 'Core Web Vitals', 'Analytics', 'Optimisation vitesse'],
+    title: 'Design UI/UX & Branding',
+    description: 'Marquez les esprits avec une identité visuelle forte et une expérience utilisateur inoubliable.',
+    features: ['Logotypes', 'Charte graphique', 'Expérience utilisateur', 'Maquettes (Figma)'],
     color: 'sky',
   },
 ]
@@ -95,7 +98,7 @@ export default function Services() {
   return (
     <section id="services" className="services section">
       <div className="container">
-        <motion.div 
+        <motion.div
           className="section-header"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -104,12 +107,12 @@ export default function Services() {
         >
           <h2>Nos Services</h2>
           <p>
-            Des solutions web complètes adaptées aux besoins de votre entreprise. 
+            Des solutions web complètes adaptées aux besoins de votre entreprise.
             De la conception au lancement, nous gérons tous les aspects de votre présence digitale.
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           ref={ref}
           className="services__grid"
           variants={containerVariants}
@@ -117,7 +120,7 @@ export default function Services() {
           animate={isInView ? "visible" : "hidden"}
         >
           {services.map((service) => (
-            <motion.div 
+            <motion.div
               key={service.id}
               className={`services__card services__card--${service.color}`}
               variants={cardVariants}
@@ -133,16 +136,28 @@ export default function Services() {
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
-              <motion.a 
-                href="#contact" 
-                className="services__card-link"
-                whileHover={{ x: 5 }}
-              >
-                En savoir plus
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </motion.a>
+              {service.slug.startsWith('/') ? (
+                <Link
+                  to={service.slug}
+                  className="services__card-link"
+                >
+                  En savoir plus
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </Link>
+              ) : (
+                <motion.a
+                  href={service.slug}
+                  className="services__card-link"
+                  whileHover={{ x: 5 }}
+                >
+                  En savoir plus
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </motion.a>
+              )}
             </motion.div>
           ))}
         </motion.div>
