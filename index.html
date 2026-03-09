@@ -51,39 +51,44 @@
   <meta name="contact" content="dyvase.contact@gmail.com" />
   <meta name="telephone" content="+33651504173" />
 
-  <!-- Preconnect for Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Optimized Font Loading -->
-  <link rel="preload" as="style"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:wght@400;500;600;700&display=swap&display=swap" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:wght@400;500;600;700&display=swap&display=swap"
-    media="print" onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:wght@400;500;600;700&display=swap&display=swap" />
-  </noscript>
-
-  <!-- Critical CSS -->
+  <!-- Inlined CSS (index.css + App.css + Hero.css) -->
   <style>
     :root {
       --color-mint: #A7D7C5;
       --color-mint-light: #C5E8DB;
       --color-lavender: #C4B5E0;
+      --color-lavender-light: #D9D0EC;
       --color-peach: #F5C7B8;
       --color-peach-light: #FBDED5;
+      --color-coral: #F8B4A4;
+      --color-sky: #9ED5E8;
+      --color-cream: #FDF8F3;
+      --color-cream-dark: #F5EDE5;
       --color-text-primary: #2D3047;
       --color-text-secondary: #5C5F7A;
+      --color-text-muted: #8E90A6;
+      --color-surface: #FFFFFF;
       --color-background: #FDF8F3;
       --font-display: 'Fraunces', Georgia, serif;
       --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      --space-xs: 0.25rem;
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
       --space-lg: 1.5rem;
       --space-xl: 2rem;
+      --space-2xl: 3rem;
       --space-3xl: 4rem;
       --space-4xl: 6rem;
       --space-5xl: 8rem;
+      --radius-sm: 0.5rem;
+      --radius-md: 1rem;
+      --radius-lg: 1.5rem;
+      --radius-xl: 2rem;
+      --radius-full: 9999px;
+      --shadow-sm: 0 2px 8px rgba(45, 48, 71, 0.04);
+      --shadow-md: 0 4px 20px rgba(45, 48, 71, 0.08);
+      --transition-fast: 150ms ease;
+      --transition-base: 250ms ease;
     }
 
     *,
@@ -96,6 +101,7 @@
 
     html {
       font-size: 16px;
+      scroll-behavior: smooth;
       -webkit-font-smoothing: antialiased;
       background-color: var(--color-background);
     }
@@ -107,16 +113,48 @@
       overflow-x: hidden;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
+    #root {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .app {
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .canvas-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .main-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: var(--font-display);
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 var(--space-lg);
     }
 
     .hero {
@@ -134,9 +172,6 @@
       grid-template-columns: 1fr;
       gap: var(--space-3xl);
       align-items: center;
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 var(--space-lg);
     }
 
     @media (min-width: 1024px) {
@@ -146,12 +181,18 @@
     }
 
     .hero__title {
-      font-family: var(--font-display);
       font-size: clamp(3rem, 8vw, 5.5rem);
       font-weight: 700;
-      line-height: 1;
       margin-bottom: var(--space-lg);
       animation: fadeIn 0.8s ease-out forwards;
+    }
+
+    .hero__title-accent {
+      display: block;
+      background: linear-gradient(135deg, var(--color-mint) 0%, var(--color-lavender) 50%, var(--color-peach) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .hero__subtitle {
@@ -164,11 +205,54 @@
       opacity: 0;
     }
 
-    .main-content {
-      position: relative;
-      z-index: 1;
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.875rem 1.75rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-base);
+    }
+
+    .btn-primary {
+      background-color: var(--color-peach);
+      color: var(--color-text-primary);
+      border: none;
+    }
+
+    .btn-secondary {
+      background-color: var(--color-mint);
+      color: var(--color-text-primary);
+      border: none;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
+
+  <!-- Deferred Font Loading Script -->
+  <script>
+    (function () {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:wght@400;500;600;700&display=swap';
+      window.addEventListener('load', function () {
+        setTimeout(function () { document.head.appendChild(link); }, 1000);
+      });
+    })();
+  </script>
+
 
   <!-- DNS Prefetch -->
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
@@ -361,7 +445,8 @@
             j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-5P27M6LH');
-      }, 3000);
+      }, 5000);
+
     });
   </script>
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P27M6LH" height="0" width="0"

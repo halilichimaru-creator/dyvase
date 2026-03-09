@@ -24,14 +24,10 @@ export default function Portfolio() {
         </motion.div>
 
         <div className="portfolio__grid">
-          {caseStudies.map((study, index) => (
-            <motion.div
+          {caseStudies.map((study) => (
+            <div
               key={study.id}
               className="portfolio-card"
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
             >
               <div className="portfolio-card__image-container">
                 <img src={study.image} alt={study.title} loading="lazy" />
@@ -69,9 +65,10 @@ export default function Portfolio() {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
+
 
         <motion.div
           className="portfolio__cta-container"

@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import './Services.css'
 
@@ -69,31 +67,8 @@ const services = [
   },
 ]
 
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-}
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 40 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: [0.22, 1, 0.36, 1] as const,
-    },
-  },
-}
 
 export default function Services() {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
     <section id="services" className="services section">
@@ -112,19 +87,11 @@ export default function Services() {
           </p>
         </motion.div>
 
-        <motion.div
-          ref={ref}
-          className="services__grid"
-          variants={containerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-        >
+        <div className="services__grid">
           {services.map((service) => (
-            <motion.div
+            <div
               key={service.id}
               className={`services__card services__card--${service.color}`}
-              variants={cardVariants}
-              whileHover={{ y: -8, transition: { duration: 0.3 } }}
             >
               <div className="services__card-icon">
                 {service.icon}
@@ -147,20 +114,20 @@ export default function Services() {
                   </svg>
                 </Link>
               ) : (
-                <motion.a
+                <a
                   href={service.slug}
                   className="services__card-link"
-                  whileHover={{ x: 5 }}
                 >
                   En savoir plus
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
-                </motion.a>
+                </a>
               )}
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
+        </div>
+
       </div>
     </section>
   )

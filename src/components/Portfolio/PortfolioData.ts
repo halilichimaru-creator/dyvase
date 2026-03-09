@@ -32,9 +32,9 @@ export const caseStudies: CaseStudy[] = [
         id: 'cartea-co',
         title: 'Identité Visuelle & Web Design',
         client: 'CARTEA & CO',
-        location: 'Lyon',
-        category: 'Design d\'Intérieur',
-        image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=500&fit=crop',
+        location: 'Mulhouse',
+        category: 'Designer de carte de visite',
+        image: 'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=800&h=500&fit=crop',
         challenge: 'Besoin d\'une présence digitale à la hauteur de leurs prestations de luxe pour attirer une clientèle haut de gamme.',
         solution: 'Design minimaliste utilisant des animations fluides (GSAP) et une palette de couleurs terracotta/crème pour un rendu premium.',
         results: [
