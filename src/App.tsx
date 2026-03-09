@@ -51,7 +51,7 @@ function App() {
       } else {
         setShowScene(true)
       }
-    }, 4000)
+    }, 8000)
     return () => clearTimeout(timer)
   }, [])
 

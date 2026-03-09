@@ -34,24 +34,16 @@ export default function Hero() {
           initial="visible" // Start visible to avoid opacity: 0 block
           animate="visible"
         >
-          <motion.h1
-            className="hero__title"
-            variants={itemVariants}
-            initial={{ opacity: 1, y: 0 }} // Force immediate visibility for LCP
-          >
+          <h1 className="hero__title">
             Solutions Web<br />
             <span className="hero__title-accent">Créatives</span>
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            className="hero__subtitle"
-            variants={itemVariants}
-            initial={{ opacity: 1, y: 0 }} // Force immediate visibility for LCP
-          >
+          <p className="hero__subtitle">
             Nous créons des expériences digitales qui inspirent et engagent.
             Des sites web performants et sur-mesure qui transforment
             votre activité et génèrent des résultats concrets.
-          </motion.p>
+          </p>
 
           <motion.div
             className="hero__cta-group"
