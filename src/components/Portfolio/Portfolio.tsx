@@ -62,13 +62,6 @@ export default function Portfolio() {
           ))}
         </div>
 
-        <div className="section-header">
-          <h2>Nos Services</h2>
-          <p>
-            Des solutions web complètes adaptées aux besoins de votre entreprise.
-            De la conception au lancement, nous gérons tous les aspects de votre présence digitale.
-          </p>
-        </div>
 
         <div className="portfolio__cta-container">
           <p>Vous avez un projet similaire ?</p>
