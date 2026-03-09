@@ -6,19 +6,19 @@ const containerVariants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.15,
-      delayChildren: 0.3,
+      staggerChildren: 0.1,
+      delayChildren: 0.1, // Reduced from 0.3
     },
   },
 }
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 20 }, // Reduced y translation
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.5, // Faster duration
       ease: [0.22, 1, 0.36, 1] as const,
     },
   },
@@ -28,43 +28,45 @@ export default function Hero() {
   return (
     <section className="hero" itemScope itemType="https://schema.org/WebPageElement">
       <div className="container hero__container">
-        <motion.div 
+        <motion.div
           className="hero__content"
           variants={containerVariants}
-          initial="hidden"
+          initial="visible" // Start visible to avoid opacity: 0 block
           animate="visible"
         >
-          <motion.h1 
+          <motion.h1
             className="hero__title"
             variants={itemVariants}
+            initial={{ opacity: 1, y: 0 }} // Force immediate visibility for LCP
           >
             Solutions Web<br />
             <span className="hero__title-accent">Créatives</span>
           </motion.h1>
-          
-          <motion.p 
+
+          <motion.p
             className="hero__subtitle"
             variants={itemVariants}
+            initial={{ opacity: 1, y: 0 }} // Force immediate visibility for LCP
           >
-            Nous créons des expériences digitales qui inspirent et engagent. 
-            Des sites web performants et sur-mesure qui transforment 
+            Nous créons des expériences digitales qui inspirent et engagent.
+            Des sites web performants et sur-mesure qui transforment
             votre activité et génèrent des résultats concrets.
           </motion.p>
-          
-          <motion.div 
+
+          <motion.div
             className="hero__cta-group"
             variants={itemVariants}
           >
-            <motion.a 
-              href="#contact" 
+            <motion.a
+              href="#contact"
               className="btn btn-primary hero__btn"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Demander un devis
             </motion.a>
-            <motion.a 
-              href="#work" 
+            <motion.a
+              href="#work"
               className="btn btn-secondary hero__btn"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -72,8 +74,8 @@ export default function Hero() {
               Découvrir le sur-mesure
             </motion.a>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             className="hero__stats"
             variants={itemVariants}
           >
@@ -101,23 +103,24 @@ export default function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div 
+      <motion.div
         className="hero__scroll-indicator"
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.5, duration: 0.6 }}
+        transition={{ delay: 1, duration: 0.6 }} // Reduced delay from 1.5
       >
         <span>Défiler pour explorer</span>
-        <motion.div 
+        <motion.div
           className="hero__scroll-arrow"
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </motion.div>
       </motion.div>
     </section>
   )
 }
+
