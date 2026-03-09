@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { caseStudies } from './PortfolioData'
 import './Portfolio.css'
 
@@ -6,13 +5,7 @@ export default function Portfolio() {
   return (
     <section id="work" className="portfolio section">
       <div className="container">
-        <motion.div
-          className="section-header"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="section-header">
           <span className="section-label">Portfolio</span>
           <h2 className="section-title">
             Nos <span className="text-gradient">Réalisations</span> & Études de Cas
@@ -21,7 +14,7 @@ export default function Portfolio() {
             Découvrez comment nous aidons nos clients à transformer leur présence
             digitale avec des solutions sur-mesure et performantes.
           </p>
-        </motion.div>
+        </div>
 
         <div className="portfolio__grid">
           {caseStudies.map((study) => (
@@ -69,24 +62,23 @@ export default function Portfolio() {
           ))}
         </div>
 
+        <div className="section-header">
+          <h2>Nos Services</h2>
+          <p>
+            Des solutions web complètes adaptées aux besoins de votre entreprise.
+            De la conception au lancement, nous gérons tous les aspects de votre présence digitale.
+          </p>
+        </div>
 
-        <motion.div
-          className="portfolio__cta-container"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="portfolio__cta-container">
           <p>Vous avez un projet similaire ?</p>
-          <motion.a
+          <a
             href="#contact"
             className="btn btn-primary"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
             Demander mon étude personnalisée
-          </motion.a>
-        </motion.div>
+          </a>
+        </div>
       </div>
     </section>
   )

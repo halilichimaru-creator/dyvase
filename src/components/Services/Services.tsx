@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import './Services.css'
 
@@ -73,19 +72,13 @@ export default function Services() {
   return (
     <section id="services" className="services section">
       <div className="container">
-        <motion.div
-          className="section-header"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="section-header">
           <h2>Nos Services</h2>
           <p>
             Des solutions web complètes adaptées aux besoins de votre entreprise.
             De la conception au lancement, nous gérons tous les aspects de votre présence digitale.
           </p>
-        </motion.div>
+        </div>
 
         <div className="services__grid">
           {services.map((service) => (
