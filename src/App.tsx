@@ -6,6 +6,7 @@ import Services from './components/Services'
 import Portfolio from './components/Portfolio'
 import About from './components/About'
 import Testimonials from './components/Testimonials'
+import LeadMagnet from './components/LeadMagnet/LeadMagnet'
 import Footer from './components/Footer'
 import SEO from './components/SEO/SEO'
 import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton'
@@ -34,6 +35,7 @@ function HomePage() {
       <Hero />
       <Services />
       <Portfolio />
+      <LeadMagnet />
       <About />
       <Testimonials />
     </>
