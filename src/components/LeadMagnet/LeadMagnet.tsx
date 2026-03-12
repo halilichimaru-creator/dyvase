@@ -24,8 +24,8 @@ export default function LeadMagnet() {
             // Trigger download after a short delay
             setTimeout(() => {
                 const link = document.createElement('a')
-                link.href = '/guides/guide-erreurs-visibilite-mulhouse.pdf'
-                link.download = 'Dyvase-Guide-Visibilite-Mulhouse.pdf'
+                link.href = '/guides/10 erreurs qui tuent votre visibilité à Mulhouse.pdf'
+                link.download = '10 erreurs qui tuent votre visibilité à Mulhouse.pdf'
                 document.body.appendChild(link)
                 link.click()
                 document.body.removeChild(link)

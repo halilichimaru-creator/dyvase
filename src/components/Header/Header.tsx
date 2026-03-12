@@ -7,7 +7,6 @@ const navLinks = [
   { href: '/#work', label: 'Réalisations' },
   { href: '/#about', label: 'À propos' },
   { href: '/#services', label: 'Services' },
-  { href: '/devis', label: 'Devis Gratuit' },
 ]
 
 export default function Header() {
