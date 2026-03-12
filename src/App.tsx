@@ -35,7 +35,6 @@ function HomePage() {
       <Hero />
       <Services />
       <Portfolio />
-      <LeadMagnet />
       <About />
       <Testimonials />
     </>
@@ -90,6 +89,7 @@ function App() {
             </Routes>
           </Suspense>
         </main>
+        <LeadMagnet />
         <Footer />
       </div>
       <WhatsAppButton />

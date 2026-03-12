@@ -69,6 +69,12 @@
     gap: var(--space-md);
 }
 
+@media (max-width: 640px) {
+    .form-group-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 .lead-input {
     background: var(--color-surface);
     border: 1px solid rgba(45, 48, 71, 0.1);
