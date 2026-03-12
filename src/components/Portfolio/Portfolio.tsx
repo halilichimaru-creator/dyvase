@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { caseStudies } from './PortfolioData'
 import './Portfolio.css'
 
@@ -23,7 +24,7 @@ export default function Portfolio() {
               className="portfolio-card"
             >
               <div className="portfolio-card__image-container">
-                <img src={study.image} alt={study.title} loading="lazy" />
+                <img src={study.image} alt={study.alt} loading="lazy" />
                 <div className="portfolio-card__overlay">
                   <span className="portfolio-card__category">{study.category}</span>
                   <span className="portfolio-card__location">{study.location}</span>
@@ -65,12 +66,12 @@ export default function Portfolio() {
 
         <div className="portfolio__cta-container">
           <p>Vous avez un projet similaire ?</p>
-          <a
-            href="#contact"
+          <Link
+            to="/devis"
             className="btn btn-primary"
           >
-            Demander mon étude personnalisée
-          </a>
+            Estimer mon projet
+          </Link>
         </div>
       </div>
     </section>

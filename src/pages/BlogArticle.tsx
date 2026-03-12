@@ -93,7 +93,7 @@ export default function BlogArticle() {
                     </div>
                 </div>
                 <div className="blog-article__hero-image">
-                    <img src={article.image} alt={article.title} />
+                    <img src={article.image} alt={article.alt} />
                 </div>
             </motion.section>
 

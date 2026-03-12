@@ -1,30 +1,32 @@
 export interface BlogArticle {
-    id: number
-    slug: string
-    title: string
-    metaDescription: string
-    excerpt: string
-    date: string
-    category: string
-    image: string
-    readTime: string
-    keywords: string
-    content: string
+  id: number
+  slug: string
+  title: string
+  metaDescription: string
+  excerpt: string
+  date: string
+  category: string
+  image: string
+  alt: string
+  readTime: string
+  keywords: string
+  content: string
 }
 
 export const blogArticles: BlogArticle[] = [
-    {
-        id: 1,
-        slug: 'pourquoi-site-web-professionnel-indispensable-2026',
-        title: 'Pourquoi un site web professionnel est indispensable en 2026',
-        metaDescription: 'Découvrez pourquoi avoir un site web professionnel est essentiel pour votre entreprise en 2026. Visibilité, crédibilité et croissance : les avantages clés.',
-        excerpt: 'En 2026, ne pas avoir de site web professionnel revient à être invisible. Découvrez pourquoi c\'est un investissement incontournable pour votre entreprise.',
-        date: '2026-03-01',
-        category: 'Stratégie',
-        image: '/images/articles1.jpg',
-        readTime: '6 min',
-        keywords: 'site web professionnel, création site internet, présence en ligne, entreprise digitale 2026',
-        content: `
+  {
+    id: 1,
+    slug: 'pourquoi-site-web-professionnel-indispensable-2026',
+    title: 'Pourquoi un site web professionnel est indispensable en 2026',
+    metaDescription: 'Découvrez pourquoi avoir un site web professionnel est essentiel pour votre entreprise en 2026. Visibilité, crédibilité et croissance : les avantages clés.',
+    excerpt: 'En 2026, ne pas avoir de site web professionnel revient à être invisible. Découvrez pourquoi c\'est un investissement incontournable pour votre entreprise.',
+    date: '2026-03-01',
+    category: 'Stratégie',
+    image: '/images/articles1.jpg',
+    alt: 'Création site internet professionnel 2026 - Agence Web Mulhouse Dyvase',
+    readTime: '6 min',
+    keywords: 'site web professionnel, création site internet, présence en ligne, entreprise digitale 2026',
+    content: `
       <h2>Votre entreprise a-t-elle vraiment besoin d'un site web en 2026 ?</h2>
       <p>La réponse est un <strong>oui catégorique</strong>. En 2026, plus de 93 % des consommateurs recherchent des produits et services en ligne avant de prendre une décision d'achat. Si votre entreprise n'est pas présente sur le web, vous perdez chaque jour des clients potentiels au profit de vos concurrents.</p>
 
@@ -60,22 +62,23 @@ export const blogArticles: BlogArticle[] = [
       <div class="article-cta">
         <h3>Prêt à créer votre site web professionnel ?</h3>
         <p>Chez Dyvase, nous créons des sites web sur-mesure qui convertissent vos visiteurs en clients. Discutons de votre projet.</p>
-        <a href="/#contact" class="article-cta__button">Demander un devis gratuit</a>
+        <a href="/devis" class="article-cta__button">Demander un devis</a>
       </div>
     `,
-    },
-    {
-        id: 2,
-        slug: 'comment-choisir-agence-web-mulhouse',
-        title: 'Comment choisir la bonne agence web à Mulhouse',
-        metaDescription: 'Guide complet pour choisir la meilleure agence web à Mulhouse. Critères essentiels, questions à poser et erreurs à éviter pour votre projet digital.',
-        excerpt: 'Choisir la bonne agence web est une décision stratégique. Découvrez les critères essentiels qui feront la différence pour votre projet digital à Mulhouse.',
-        date: '2026-02-25',
-        category: 'Conseils',
-        image: '/images/articles2.jpg',
-        readTime: '7 min',
-        keywords: 'agence web mulhouse, choisir agence web, développement web mulhouse, agence digitale alsace',
-        content: `
+  },
+  {
+    id: 2,
+    slug: 'comment-choisir-agence-web-mulhouse',
+    title: 'Comment choisir la bonne agence web à Mulhouse',
+    metaDescription: 'Guide complet pour choisir la meilleure agence web à Mulhouse. Critères essentiels, questions à poser et erreurs à éviter pour votre projet digital.',
+    excerpt: 'Choisir la bonne agence web est une décision stratégique. Découvrez les critères essentiels qui feront la différence pour votre projet digital à Mulhouse.',
+    date: '2026-02-25',
+    category: 'Conseils',
+    image: '/images/articles2.jpg',
+    alt: 'Comment choisir une agence web à Mulhouse - Guide Dyvase',
+    readTime: '7 min',
+    keywords: 'agence web mulhouse, choisir agence web, développement web mulhouse, agence digitale alsace',
+    content: `
       <h2>Comment trouver l'agence web idéale à Mulhouse ?</h2>
       <p>Le choix d'une agence web est une décision qui impacte directement la réussite de votre projet digital. À Mulhouse et dans toute la région Alsace, de nombreuses agences proposent leurs services. Mais comment distinguer celle qui correspondra parfaitement à vos besoins ?</p>
 
@@ -117,22 +120,23 @@ export const blogArticles: BlogArticle[] = [
       <div class="article-cta">
         <h3>Envie d'en discuter ?</h3>
         <p>Chez Dyvase, agence web basée à Mulhouse, nous vous accompagnons de A à Z dans votre projet digital. Contactez-nous pour un échange sans engagement.</p>
-        <a href="/#contact" class="article-cta__button">Demander un devis gratuit</a>
+        <a href="/devis" class="article-cta__button">Demander un devis</a>
       </div>
     `,
-    },
-    {
-        id: 3,
-        slug: 'tendances-web-design-2026',
-        title: 'Les tendances du web design en 2026',
-        metaDescription: 'Découvrez les tendances web design 2026 : animations 3D, glassmorphism, dark mode, micro-interactions. Inspirez-vous pour votre prochain site.',
-        excerpt: 'Animations 3D, glassmorphism, dark mode avancé... Découvrez les tendances web design qui dominent en 2026 et comment les intégrer à votre site.',
-        date: '2026-02-18',
-        category: 'Design',
-        image: '/images/articles3.jpg',
-        readTime: '8 min',
-        keywords: 'tendances web design 2026, design web moderne, UI UX tendances, web design inspiration',
-        content: `
+  },
+  {
+    id: 3,
+    slug: 'tendances-web-design-2026',
+    title: 'Les tendances du web design en 2026',
+    metaDescription: 'Découvrez les tendances web design 2026 : animations 3D, glassmorphism, dark mode, micro-interactions. Inspirez-vous pour votre prochain site.',
+    excerpt: 'Animations 3D, glassmorphism, dark mode avancé... Découvrez les tendances web design qui dominent en 2026 et comment les intégrer à votre site.',
+    date: '2026-02-18',
+    category: 'Design',
+    image: '/images/articles3.jpg',
+    alt: 'Tendances web design 2026 - Interface moderne par Dyvase Mulhouse',
+    readTime: '8 min',
+    keywords: 'tendances web design 2026, design web moderne, UI UX tendances, web design inspiration',
+    content: `
       <h2>Les tendances web design qui marquent 2026</h2>
       <p>Le web design évolue constamment, et 2026 apporte son lot d'innovations passionnantes. Des animations 3D immersives aux interfaces minimalistes, découvrez les tendances qui redéfinissent l'expérience utilisateur sur le web.</p>
 
@@ -168,22 +172,23 @@ export const blogArticles: BlogArticle[] = [
       <div class="article-cta">
         <h3>Envie d'un site au design tendance ?</h3>
         <p>Dyvase conçoit des sites web qui allient les dernières tendances à une expérience utilisateur optimale. Parlez-nous de votre vision.</p>
-        <a href="/#contact" class="article-cta__button">Demander un devis gratuit</a>
+        <a href="/devis" class="article-cta__button">Demander un devis</a>
       </div>
     `,
-    },
-    {
-        id: 4,
-        slug: 'seo-local-visibilite-mulhouse',
-        title: 'SEO local : comment être visible à Mulhouse et en Alsace',
-        metaDescription: 'Stratégies SEO local pour améliorer votre visibilité sur Google à Mulhouse. Google Business, mots-clés locaux, avis clients : guide complet.',
-        excerpt: 'Vous voulez que votre entreprise apparaisse en premier sur Google à Mulhouse ? Découvrez les stratégies SEO local qui font la différence.',
-        date: '2026-02-10',
-        category: 'SEO',
-        image: '/images/articles4.jpeg',
-        readTime: '7 min',
-        keywords: 'SEO local mulhouse, référencement local alsace, Google Business mulhouse, visibilité Google',
-        content: `
+  },
+  {
+    id: 4,
+    slug: 'seo-local-visibilite-mulhouse',
+    title: 'SEO local : comment être visible à Mulhouse et en Alsace',
+    metaDescription: 'Stratégies SEO local pour améliorer votre visibilité sur Google à Mulhouse. Google Business, mots-clés locaux, avis clients : guide complet.',
+    excerpt: 'Vous voulez que votre entreprise apparaisse en premier sur Google à Mulhouse ? Découvrez les stratégies SEO local qui font la différence.',
+    date: '2026-02-10',
+    category: 'SEO',
+    image: '/images/articles4.jpeg',
+    alt: 'SEO local Mulhouse - Stratégie de visibilité Google en Alsace',
+    readTime: '7 min',
+    keywords: 'SEO local mulhouse, référencement local alsace, Google Business mulhouse, visibilité Google',
+    content: `
       <h2>Le SEO local : votre arme secrète pour dominer Google à Mulhouse</h2>
       <p>Le <strong>SEO local</strong> est l'ensemble des techniques qui permettent à votre entreprise d'apparaître dans les résultats de recherche lorsque des personnes recherchent des services près de chez elles. Pour une entreprise basée à Mulhouse, c'est un levier de croissance incontournable.</p>
 
@@ -219,96 +224,35 @@ export const blogArticles: BlogArticle[] = [
       <p>Créez du contenu spécifique à votre zone géographique : articles de blog mentionnant Mulhouse, pages dédiées aux villes que vous desservez, études de cas de clients locaux. Ce contenu signale à Google que vous êtes un acteur local pertinent.</p>
 
       <h2>Le SEO local, un investissement rentable</h2>
-      <p>Contrairement à la publicité payante, le SEO local génère des résultats durables. Une fois bien positionné, votre site continue d'attirer des clients locaux sem après mois, sans coût supplémentaire par clic.</p>
+      <p>Contrairement à la publicité payante, le SEO local génère des résultats durables. Une fois bien positionné, votre site continue d'attirer des clients locaux semaines après mois, sans coût supplémentaire par clic.</p>
 
       <div class="article-cta">
         <h3>Boostez votre visibilité locale</h3>
         <p>Dyvase vous accompagne dans votre stratégie SEO locale à Mulhouse et en Alsace. Audit gratuit de votre visibilité en ligne.</p>
-        <a href="/#contact" class="article-cta__button">Demander un devis gratuit</a>
+        <a href="/devis" class="article-cta__button">Demander un devis</a>
       </div>
     `,
-    },
-    {
-        id: 5,
-        slug: 'site-vitrine-vs-site-ecommerce-lequel-choisir',
-        title: 'Site vitrine vs site e-commerce : lequel choisir ?',
-        metaDescription: 'Site vitrine ou site e-commerce ? Découvrez les différences, avantages et inconvénients de chaque solution pour faire le bon choix pour votre entreprise.',
-        excerpt: 'Site vitrine ou e-commerce ? Chaque type de site répond à des objectifs différents. On vous aide à faire le bon choix pour votre activité.',
-        date: '2026-02-03',
-        category: 'Conseils',
-        image: '/images/articles5.jpg',
-        readTime: '6 min',
-        keywords: 'site vitrine, site e-commerce, différence site vitrine e-commerce, création site web',
-        content: `
-      <h2>Site vitrine ou site e-commerce : le grand dilemme</h2>
-      <p>L'une des premières questions que se posent les entrepreneurs est : <strong>dois-je créer un site vitrine ou un site e-commerce ?</strong> La réponse dépend de vos objectifs, de votre activité et de votre stratégie commerciale.</p>
-
-      <h2>Le site vitrine : votre carte de visite digitale</h2>
-      <p>Un <strong>site vitrine</strong> présente votre entreprise, vos services et vos réalisations. Il sert à informer, rassurer et convertir vos visiteurs en prospects.</p>
-
-      <h3>Avantages du site vitrine</h3>
-      <ul>
-        <li><strong>Coût de création plus abordable</strong> — moins de fonctionnalités complexes</li>
-        <li><strong>Rapidité de mise en ligne</strong> — quelques semaines suffisent</li>
-        <li><strong>Maintenance simplifiée</strong> — pas de gestion de stock ni de paiements</li>
-        <li><strong>Idéal pour les prestataires de services</strong> — artisans, consultants, professions libérales</li>
-      </ul>
-
-      <h3>Pour qui ?</h3>
-      <p>Le site vitrine est parfait pour les entreprises qui vendent des services ou qui souhaitent présenter leur activité sans vendre directement en ligne : restaurants, cabinets médicaux, agences immobilières, artisans du bâtiment...</p>
-
-      <h2>Le site e-commerce : votre boutique en ligne</h2>
-      <p>Un <strong>site e-commerce</strong> permet de vendre des produits ou services directement en ligne. Il intègre un catalogue produits, un panier d'achat, un système de paiement sécurisé et une gestion des commandes.</p>
-
-      <h3>Avantages du site e-commerce</h3>
-      <ul>
-        <li><strong>Ventes 24h/24</strong> — votre boutique ne ferme jamais</li>
-        <li><strong>Zone de chalandise illimitée</strong> — vendez partout en France et à l'international</li>
-        <li><strong>Automatisation</strong> — gestion des commandes, paiements, facturations</li>
-        <li><strong>Données précieuses</strong> — analyse du comportement d'achat de vos clients</li>
-      </ul>
-
-      <h3>Pour qui ?</h3>
-      <p>Le site e-commerce convient aux entreprises qui vendent des produits physiques ou numériques : boutiques de mode, épiceries fines, éditeurs de logiciels, formations en ligne...</p>
-
-      <h2>Tableau comparatif</h2>
-      <p>Voici un résumé des principales différences :</p>
-      <ul>
-        <li><strong>Objectif</strong> : Vitrine = présenter / E-commerce = vendre en ligne</li>
-        <li><strong>Budget</strong> : Vitrine = à partir de 1 500 € / E-commerce = à partir de 3 000 €</li>
-        <li><strong>Complexité</strong> : Vitrine = faible / E-commerce = modérée à élevée</li>
-        <li><strong>Maintenance</strong> : Vitrine = légère / E-commerce = régulière</li>
-      </ul>
-
-      <h2>Et pourquoi pas les deux ?</h2>
-      <p>De nombreuses entreprises commencent par un site vitrine puis évoluent vers le e-commerce. Une bonne agence web conçoit des sites évolutifs qui s'adaptent à la croissance de votre activité.</p>
-
-      <div class="article-cta">
-        <h3>Besoin d'aide pour faire votre choix ?</h3>
-        <p>Dyvase vous conseille et crée le site adapté à vos objectifs. Site vitrine ou e-commerce, nous avons la solution sur-mesure pour vous.</p>
-        <a href="/#contact" class="article-cta__button">Demander un devis gratuit</a>
-      </div>
-    `,
-    },
-    {
-        id: 6,
-        slug: 'combien-coute-site-internet-professionnel',
-        title: 'Combien coûte un site internet professionnel en 2026 ?',
-        metaDescription: 'Quel budget prévoir pour un site internet professionnel en 2026 ? Prix site vitrine, e-commerce, sur-mesure. Guide complet des tarifs.',
-        excerpt: 'Le prix d\'un site web varie énormément. On décrypte les tarifs du marché pour vous aider à budgéter votre projet web en 2026.',
-        date: '2026-01-27',
-        category: 'Budget',
-        image: '/images/articles6.webp',
-        readTime: '8 min',
-        keywords: 'prix site internet, coût création site web, tarif agence web, budget site professionnel 2026',
-        content: `
+  },
+  {
+    id: 5,
+    slug: 'combien-coute-site-internet-professionnel',
+    title: 'Combien coûte un site internet professionnel en 2026 ?',
+    metaDescription: 'Quel budget prévoir pour un site internet professionnel en 2026 ? Prix site vitrine, refonte, sur-mesure. Guide complet des tarifs.',
+    excerpt: 'Le prix d\'un site web varie énormément. On décrypte les tarifs du marché pour vous aider à budgéter votre projet web en 2026.',
+    date: '2026-01-27',
+    category: 'Budget',
+    image: '/images/articles6.webp',
+    alt: 'Prix site internet professionnel 2026 - Devis Agence Web Mulhouse',
+    readTime: '8 min',
+    keywords: 'prix site internet, coût création site web, tarif agence web, budget site professionnel 2026',
+    content: `
       <h2>Combien investir pour un site internet de qualité ?</h2>
       <p>C'est LA question que se pose tout entrepreneur : <strong>combien coûte un site web ?</strong> La réponse varie considérablement selon vos besoins, le type de site, et le prestataire choisi. Décryptons ensemble les tarifs du marché en 2026.</p>
 
       <h2>Les facteurs qui influencent le prix</h2>
       <p>Plusieurs éléments déterminent le coût d'un site web :</p>
       <ul>
-        <li><strong>Le type de site</strong> — vitrine, e-commerce, application web</li>
+        <li><strong>Le type de site</strong> — vitrine simple, site vitrine complet, refonte de site existant</li>
         <li><strong>Le nombre de pages</strong> — un site de 5 pages coûte moins qu'un site de 30 pages</li>
         <li><strong>Le design</strong> — template personnalisé vs design sur-mesure</li>
         <li><strong>Les fonctionnalités</strong> — formulaires, réservation, espace membre, multilingue</li>
@@ -321,32 +265,17 @@ export const blogArticles: BlogArticle[] = [
       <h3>Site vitrine (5 à 10 pages)</h3>
       <p>Le site vitrine est la solution la plus accessible pour établir votre présence en ligne :</p>
       <ul>
-        <li><strong>Template personnalisé</strong> : 1 000 € à 2 500 €</li>
-        <li><strong>Design sur-mesure</strong> : 2 500 € à 5 000 €</li>
-        <li><strong>Premium avec animations</strong> : 5 000 € à 10 000 €</li>
-      </ul>
-
-      <h3>Site e-commerce</h3>
-      <p>Un site e-commerce demande plus de développement pour la gestion des produits et des paiements :</p>
-      <ul>
-        <li><strong>Solution clé en main (Shopify)</strong> : 2 000 € à 5 000 €</li>
-        <li><strong>E-commerce sur-mesure</strong> : 5 000 € à 15 000 €</li>
-        <li><strong>Marketplace complexe</strong> : 15 000 € et plus</li>
-      </ul>
-
-      <h3>Application web sur-mesure</h3>
-      <p>Pour des fonctionnalités avancées (tableau de bord, SaaS, plateforme) :</p>
-      <ul>
-        <li><strong>Application basique</strong> : 10 000 € à 25 000 €</li>
-        <li><strong>Application complexe</strong> : 25 000 € à 100 000 €+</li>
+        <li><strong>Template personnalisé (Vitrine simple)</strong> : 1 000 € à 2 500 €</li>
+        <li><strong>Design sur-mesure (Vitrine complète)</strong> : 2 500 € à 5 000 €</li>
+        <li><strong>Premium avec animations (Refonte haut de gamme)</strong> : 5 000 € à 10 000 €</li>
       </ul>
 
       <h2>Les coûts récurrents à prévoir</h2>
       <p>Au-delà du développement initial, prévoyez ces dépenses annuelles :</p>
       <ul>
-        <li><strong>Hébergement</strong> : 50 € à 300 € / an</li>
+        <li><strong>Hébergement</strong> : 50 € à 200 € / an</li>
         <li><strong>Nom de domaine</strong> : 10 € à 30 € / an</li>
-        <li><strong>Maintenance et mises à jour</strong> : 500 € à 2 000 € / an</li>
+        <li><strong>Maintenance et mises à jour</strong> : 500 € à 1 500 € / an</li>
         <li><strong>Certificat SSL</strong> : souvent inclus dans l'hébergement</li>
       </ul>
 
@@ -354,24 +283,25 @@ export const blogArticles: BlogArticle[] = [
       <p>Un site à 300 € peut vous coûter beaucoup plus cher à long terme : mauvais référencement, design dépassé, sécurité inexistante, pas de support. <strong>Investir dans la qualité dès le départ est toujours plus rentable.</strong></p>
 
       <div class="article-cta">
-        <h3>Obtenez un devis personnalisé</h3>
-        <p>Chez Dyvase, nous adaptons nos tarifs à votre budget et vos objectifs. Devis détaillé et transparent, sans engagement.</p>
-        <a href="/#contact" class="article-cta__button">Demander un devis gratuit</a>
+        <h3>Découvrez nos solutions</h3>
+        <p>Chez Dyvase, nous proposons des solutions adaptées à votre budget et vos objectifs. Transparence et accompagnement personnalisé.</p>
+        <a href="/devis" class="article-cta__button">Demander un devis</a>
       </div>
     `,
-    },
-    {
-        id: 7,
-        slug: 'erreurs-creation-site-internet',
-        title: 'Les 7 erreurs à éviter lors de la création de son site internet',
-        metaDescription: 'Évitez les erreurs courantes lors de la création de votre site web. Design, SEO, performances, contenu : les pièges à esquiver pour réussir.',
-        excerpt: 'Ne tombez pas dans les pièges classiques ! Voici les 7 erreurs les plus fréquentes lors de la création d\'un site web et comment les éviter.',
-        date: '2026-01-20',
-        category: 'Conseils',
-        image: '/images/articles7.webp',
-        readTime: '7 min',
-        keywords: 'erreurs site internet, erreurs création site web, pièges site internet, réussir son site web',
-        content: `
+  },
+  {
+    id: 6,
+    slug: 'erreurs-creation-site-internet',
+    title: 'Les 7 erreurs à éviter lors de la création de son site internet',
+    metaDescription: 'Évitez les erreurs courantes lors de la création de votre site web. Design, SEO, performances, contenu : les pièges à esquiver pour réussir.',
+    excerpt: 'Ne tombez pas dans les pièges classiques ! Voici les 7 erreurs les plus fréquentes lors de la création d\'un site web et comment les éviter.',
+    date: '2026-01-20',
+    category: 'Conseils',
+    image: '/images/articles7.webp',
+    alt: 'Erreurs à éviter création site web - Expertise Dyvase Mulhouse',
+    readTime: '7 min',
+    keywords: 'erreurs site internet, erreurs création site web, pièges site internet, réussir son site web',
+    content: `
       <h2>Les erreurs qui sabotent votre site web</h2>
       <p>Créer un site web semble simple de nos jours, mais de nombreuses erreurs peuvent compromettre son efficacité. Voici les <strong>7 erreurs les plus fréquentes</strong> que nous observons et comment les éviter.</p>
 
@@ -392,7 +322,7 @@ export const blogArticles: BlogArticle[] = [
       <p><strong>Solution :</strong> Investissez dans un design moderne et professionnel qui reflète la qualité de vos services.</p>
 
       <h2>Erreur n°5 : Pas de call-to-action clair</h2>
-      <p>Votre site doit guider le visiteur vers une action précise : demander un devis, appeler, s'inscrire. Sans <strong>appel à l'action clair</strong>, vos visiteurs naviguent sans but et quittent votre site sans convertir.</p>
+      <p>Votre site doit guider le visiteur vers une action précise : nous contacter, appeler, s'inscrire. Sans <strong>appel à l'action clair</strong>, vos visiteurs naviguent sans but et quittent votre site sans convertir.</p>
       <p><strong>Solution :</strong> Placez des CTA visibles et attractifs sur chaque page. Utilisez des verbes d'action et des couleurs contrastantes.</p>
 
       <h2>Erreur n°6 : Du contenu de mauvaise qualité</h2>
@@ -406,22 +336,23 @@ export const blogArticles: BlogArticle[] = [
       <div class="article-cta">
         <h3>Évitez toutes ces erreurs avec Dyvase</h3>
         <p>Nous créons des sites web professionnels, optimisés et performants dès le premier jour. Confiez-nous votre projet.</p>
-        <a href="/#contact" class="article-cta__button">Demander un devis gratuit</a>
+        <a href="/devis" class="article-cta__button">Demander un devis</a>
       </div>
     `,
-    },
-    {
-        id: 8,
-        slug: 'importance-responsive-design-entreprise',
-        title: "L'importance du responsive design pour votre entreprise",
-        metaDescription: "Pourquoi le responsive design est essentiel pour votre entreprise en 2026. Impact sur le SEO, l'expérience utilisateur et les conversions.",
-        excerpt: "Le responsive design n'est plus optionnel. Découvrez pourquoi un site adapté à tous les écrans est crucial pour votre activité et votre référencement.",
-        date: '2026-01-13',
-        category: 'Technique',
-        image: '/images/articles8.jpg',
-        readTime: '6 min',
-        keywords: 'responsive design, site mobile, adaptation écran, mobile first, design adaptatif',
-        content: `
+  },
+  {
+    id: 7,
+    slug: 'importance-responsive-design-entreprise',
+    title: "L'importance du responsive design pour votre entreprise",
+    metaDescription: "Pourquoi le responsive design est essentiel pour votre entreprise en 2026. Impact sur le SEO, l'expérience utilisateur et les conversions.",
+    excerpt: "Le responsive design n'est plus optionnel. Découvrez pourquoi un site adapté à tous les écrans est crucial pour votre activité et votre référencement.",
+    date: '2026-01-13',
+    category: 'Technique',
+    image: '/images/articles8.jpg',
+    alt: 'Importance responsive design - Site mobile friendly par Dyvase',
+    readTime: '6 min',
+    keywords: 'responsive design, site mobile, adaptation écran, mobile first, design adaptatif',
+    content: `
       <h2>Qu'est-ce que le responsive design ?</h2>
       <p>Le <strong>responsive design</strong> (ou design adaptatif) est une approche de conception web qui garantit que votre site s'affiche parfaitement sur tous les appareils : ordinateurs, tablettes et smartphones. Le contenu, les images et la navigation s'adaptent automatiquement à la taille de l'écran.</p>
 
@@ -464,22 +395,23 @@ export const blogArticles: BlogArticle[] = [
       <div class="article-cta">
         <h3>Votre site est-il vraiment responsive ?</h3>
         <p>Dyvase crée des sites 100 % adaptatifs qui offrent une expérience parfaite sur tous les appareils. Testez votre site avec nous.</p>
-        <a href="/#contact" class="article-cta__button">Demander un devis gratuit</a>
+        <a href="/devis" class="article-cta__button">Demander un devis</a>
       </div>
     `,
-    },
-    {
-        id: 9,
-        slug: 'comment-seo-peut-transformer-votre-business',
-        title: 'Comment le SEO peut transformer votre business',
-        metaDescription: 'Découvrez comment le référencement naturel (SEO) peut multiplier votre visibilité et vos clients. Stratégies concrètes pour les entreprises.',
-        excerpt: 'Le SEO n\'est pas qu\'une affaire de mots-clés. Découvrez comment une stratégie de référencement bien menée peut transformer votre activité.',
-        date: '2026-01-06',
-        category: 'SEO',
-        image: '/images/articles9.jpg',
-        readTime: '8 min',
-        keywords: 'SEO entreprise, référencement naturel, stratégie SEO, optimisation Google, trafic organique',
-        content: `
+  },
+  {
+    id: 8,
+    slug: 'comment-seo-peut-transformer-votre-business',
+    title: 'Comment le SEO peut transformer votre business',
+    metaDescription: 'Découvrez comment le référencement naturel (SEO) peut multiplier votre visibilité et vos clients. Stratégies concrètes pour les entreprises.',
+    excerpt: 'Le SEO n\'est pas qu\'une affaire de mots-clés. Découvrez comment une stratégie de référencement bien menée peut transformer votre activité.',
+    date: '2026-01-06',
+    category: 'SEO',
+    image: '/images/articles9.jpg',
+    alt: 'Transformation business par le SEO - Stratégie digitale Mulhouse',
+    readTime: '8 min',
+    keywords: 'SEO entreprise, référencement naturel, stratégie SEO, optimisation Google, trafic organique',
+    content: `
       <h2>Le SEO : un investissement, pas une dépense</h2>
       <p>Le <strong>référencement naturel (SEO)</strong> est souvent perçu comme un concept technique et complexe. Pourtant, c'est l'un des leviers les plus puissants pour développer votre activité. Contrairement à la publicité payante, le SEO génère un trafic durable et qualifié.</p>
 
@@ -517,22 +449,23 @@ export const blogArticles: BlogArticle[] = [
       <div class="article-cta">
         <h3>Lancez votre stratégie SEO dès maintenant</h3>
         <p>Dyvase combine expertise technique et stratégie de contenu pour booster votre visibilité sur Google. Audit SEO gratuit de votre site.</p>
-        <a href="/#contact" class="article-cta__button">Demander un devis gratuit</a>
+        <a href="/devis" class="article-cta__button">Demander un devis</a>
       </div>
     `,
-    },
-    {
-        id: 10,
-        slug: 'pourquoi-agence-web-plutot-que-freelance',
-        title: 'Pourquoi confier son site à une agence plutôt qu\'à un freelance',
-        metaDescription: 'Agence web ou freelance pour votre site internet ? Comparez les avantages de chaque option et faites le choix le plus adapté à votre projet.',
-        excerpt: 'Agence ou freelance ? Les deux options ont leurs avantages. On vous aide à comprendre laquelle correspond le mieux à votre projet et vos ambitions.',
-        date: '2025-12-30',
-        category: 'Conseils',
-        image: '/images/articles10.png',
-        readTime: '7 min',
-        keywords: 'agence web vs freelance, choisir agence ou freelance, avantages agence web, développeur freelance',
-        content: `
+  },
+  {
+    id: 9,
+    slug: 'pourquoi-agence-web-plutot-que-freelance',
+    title: 'Pourquoi confier son site à une agence plutôt qu\'à un freelance',
+    metaDescription: 'Agence web ou freelance pour votre site internet ? Comparez les avantages de chaque option et faites le choix le plus adapté à votre projet.',
+    excerpt: 'Agence ou freelance ? Les deux options ont leurs avantages. On vous aide à comprendre laquelle correspond le mieux à votre projet et vos ambitions.',
+    date: '2025-12-30',
+    category: 'Conseils',
+    image: '/images/articles10.png',
+    alt: 'Agence web vs freelance - Pourquoi choisir une agence à Mulhouse',
+    readTime: '7 min',
+    keywords: 'agence web vs freelance, choisir agence ou freelance, avantages agence web, développeur freelance',
+    content: `
       <h2>Le dilemme : agence web ou freelance ?</h2>
       <p>Quand il s'agit de créer ou refaire votre site web, une question revient systématiquement : faut-il confier le projet à une <strong>agence web</strong> ou à un <strong>freelance</strong> ? Chaque option a ses mérites, mais les différences sont significatives.</p>
 
@@ -582,8 +515,8 @@ export const blogArticles: BlogArticle[] = [
       <div class="article-cta">
         <h3>Confiez votre projet à des experts</h3>
         <p>Dyvase vous accompagne avec une approche sur-mesure, une expertise complète et un suivi personnalisé. Parlons de votre projet.</p>
-        <a href="/#contact" class="article-cta__button">Demander un devis gratuit</a>
+        <a href="/devis" class="article-cta__button">Demander un devis</a>
       </div>
     `,
-    },
+  },
 ]

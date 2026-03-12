@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
@@ -50,7 +51,6 @@ const stats = [
   { value: '20+', label: 'Projets réalisés' },
   { value: '98%', label: 'Clients satisfaits' },
   { value: '2+', label: 'Années d\'expérience' },
-  { value: '10+', label: 'Membres d\'équipe' },
 ]
 
 export default function About() {
@@ -74,15 +74,15 @@ export default function About() {
               Nous transformons vos idées en <span className="text-gradient">expériences digitales</span>
             </h2>
             <p className="about__description">
-              Dyvase est une agence web créative dédiée à la conception d'expériences 
-              digitales exceptionnelles. Fondée sur la conviction qu'un excellent design 
-              doit être accessible à tous, nous combinons technologies de pointe et 
-              design réfléchi pour aider les entreprises à prospérer à l'ère numérique.
+              Dyvase est l'agence web de référence à Mulhouse, dédiée à la conception d'expériences 
+              digitales d'exception. Fondée sur la proximité et l'excellence, nous combinons 
+              technologies de pointe et design stratégique pour aider les entreprises d'Alsace 
+              à dominer leur marché numérique.
             </p>
             <p className="about__description">
-              Notre équipe de designers, développeurs et stratèges travaille en 
-              collaboration pour livrer des solutions qui non seulement sont 
-              visuellement remarquables, mais génèrent aussi de vrais résultats business.
+              Notre équipe d'experts à Mulhouse travaille main dans la main avec vous pour 
+              livrer des solutions web sur-mesure qui allient esthétisme premium et 
+              performance SEO redoutable.
             </p>
 
             {/* Stats */}
@@ -102,14 +102,12 @@ export default function About() {
               ))}
             </div>
 
-            <motion.a 
-              href="#contact" 
+            <Link 
+              to="/devis" 
               className="btn btn-primary about__cta"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
             >
               Travaillons ensemble
-            </motion.a>
+            </Link>
           </motion.div>
 
           {/* Values */}

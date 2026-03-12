@@ -70,7 +70,7 @@ export default function Blog() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <div className="blog-card__image">
-                  <img src={post.image} alt={post.title} loading="lazy" />
+                  <img src={post.image} alt={post.alt} loading="lazy" />
                   <span className="blog-card__category">{post.category}</span>
                 </div>
                 <div className="blog-card__content">

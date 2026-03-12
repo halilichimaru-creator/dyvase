@@ -35,14 +35,14 @@ export default function Hero() {
           animate="visible"
         >
           <h1 className="hero__title">
-            Solutions Web<br />
-            <span className="hero__title-accent">Créatives</span>
+            Votre Agence Web<br />
+            <span className="hero__title-accent">à Mulhouse</span>
           </h1>
 
           <p className="hero__subtitle">
-            Nous créons des expériences digitales qui inspirent et engagent.
-            Des sites web performants et sur-mesure qui transforment
-            votre activité et génèrent des résultats concrets.
+            Dyvase transforme vos idées en expériences digitales d'exception. 
+            Création de sites vitrines et refontes sur-mesure pour booster 
+            votre visibilité locale à Mulhouse et en Alsace.
           </p>
 
           <motion.div
@@ -50,12 +50,12 @@ export default function Hero() {
             variants={itemVariants}
           >
             <motion.a
-              href="#contact"
+              href="/devis"
               className="btn btn-primary hero__btn"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Demander un devis
+              Obtenir un devis gratuit
             </motion.a>
             <motion.a
               href="#work"

@@ -1,7 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import SEO from '../components/SEO/SEO'
-import Contact from '../components/Contact/Contact'
 import './LocalSEO.css'
 
 const cityData: Record<string, { fullName: string; description: string }> = {
@@ -42,7 +41,7 @@ export default function LocalSEO() {
     }
 
     const title = `Agence Web ${data.fullName} - Création Site Internet`
-    const description = `Besoin d'un site web à ${data.fullName} ? Dyvase est ${data.description} Devis gratuit et accompagnement sur-mesure.`
+    const description = `Besoin d'un site web à ${data.fullName} ? Dyvase est ${data.description} Contactez-nous pour un accompagnement sur-mesure.`
 
     return (
         <div className="local-seo-page">
@@ -62,8 +61,8 @@ export default function LocalSEO() {
                             création de sites web performants, modernes et optimisés pour le SEO local.
                         </p>
                         <div className="local-hero__actions">
-                            <a href="#contact" className="btn btn-primary">Démarrer un projet</a>
-                            <Link to="/#work" className="btn btn-secondary">Voir nos réalisations</Link>
+                            <Link to="/devis" className="btn btn-primary">Démarrer un projet</Link>
+                            <Link to="/#portfolio" className="btn btn-secondary">Voir nos réalisations</Link>
                         </div>
                     </motion.div>
                 </div>
@@ -103,8 +102,7 @@ export default function LocalSEO() {
                             </p>
                             <p>
                                 Que vous ayez besoin d'un site vitrine pour présenter votre activité,
-                                d'une boutique en ligne pour vendre vos produits, ou d'une refonte
-                                complète de votre image de marque, nous sommes là pour vous.
+                                ou d'une refonte complète de votre image de marque, nous sommes là pour vous.
                             </p>
                             <ul className="check-list">
                                 <li>Proximité et réactivité</li>
@@ -117,7 +115,15 @@ export default function LocalSEO() {
                 </div>
             </section>
 
-            <Contact />
+            <section className="local-cta section bg-cream">
+                <div className="container">
+                    <div className="cta-box">
+                        <h2>Prêt à booster votre visibilité à {data.fullName} ?</h2>
+                        <p>Discutons de votre projet et obtenez une estimation gratuite en quelques minutes.</p>
+                        <Link to="/devis" className="btn btn-primary">Obtenir mon devis gratuit</Link>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }

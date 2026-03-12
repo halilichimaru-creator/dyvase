@@ -19,17 +19,18 @@ const services = [
   },
   {
     id: 2,
-    slug: '/services/creation-site-ecommerce',
+    slug: '/devis',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 6H10L12 18H24L26 10H12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="14" cy="24" r="2" stroke="currentColor" strokeWidth="2" />
-        <circle cx="22" cy="24" r="2" stroke="currentColor" strokeWidth="2" />
+        <path d="M6 8C6 6.89543 6.89543 6 8 6H24C25.1046 6 26 6.89543 26 8V20C26 21.1046 25.1046 22 24 22H8C6.89543 22 6 21.1046 6 20V8Z" stroke="currentColor" strokeWidth="2" />
+        <path d="M10 26H22" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M16 22V26" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M12 13L16 17L20 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
-    title: 'Site E-commerce',
-    description: 'Vendez vos produits en ligne. Nous créons des boutiques performantes avec paiement sécurisé et gestion facile.',
-    features: ['Paiement sécurisé', 'Gestion de stock', 'Conversion optimisée', 'Analytique'],
+    title: 'Refonte de Site Web',
+    description: 'Modernisez votre site existant. Nous repensons le design, améliorons les performances et optimisons l\'expérience utilisateur.',
+    features: ['Redesign moderne', 'Migration sécurisée', 'Performance optimisée', 'SEO renforcé'],
     color: 'lavender',
   },
   {
@@ -52,7 +53,7 @@ const services = [
   },
   {
     id: 4,
-    slug: '#contact',
+    slug: '/devis',
     icon: (
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="4" y="4" width="24" height="24" rx="12" stroke="currentColor" strokeWidth="2" />
@@ -75,8 +76,8 @@ export default function Services() {
         <div className="section-header">
           <h2>Nos Services</h2>
           <p>
-            Des solutions web complètes adaptées aux besoins de votre entreprise.
-            De la conception au lancement, nous gérons tous les aspects de votre présence digitale.
+            L'expertise digitale de proximité pour les professionnels de Mulhouse et d'Alsace.
+            De la stratégie SEO au lancement de votre site, nous propulsons votre présence locale.
           </p>
         </div>
 

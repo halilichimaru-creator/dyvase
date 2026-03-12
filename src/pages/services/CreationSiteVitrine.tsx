@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO/SEO'
-import Contact from '../../components/Contact/Contact'
 import './ServicePage.css'
 
 export default function CreationSiteVitrine() {
@@ -24,8 +24,8 @@ export default function CreationSiteVitrine() {
         <div className="service-page">
             <SEO
                 title="Création Site Vitrine Mulhouse | Agence Web Dyvase"
-                description="Besoin d'un site vitrine haut de gamme ? Dyvase crée des sites internet sur-mesure, rapides et optimisés SEO pour les artisans et PME. Devis gratuit."
-                keywords="création site vitrine, agence web mulhouse, site internet professionnel, devis site web"
+                description="Besoin d'un site vitrine haut de gamme ? Dyvase crée des sites internet sur-mesure, rapides et optimisés SEO pour les artisans et PME. Contactez-nous."
+                keywords="création site vitrine, agence web mulhouse, site internet professionnel, contact site web"
                 jsonLd={jsonLd}
             />
 
@@ -85,7 +85,15 @@ export default function CreationSiteVitrine() {
                 </div>
             </section>
 
-            <Contact />
+            <section className="service-cta section bg-cream">
+                <div className="container">
+                    <div className="cta-box">
+                        <h2>Prêt à donner vie à votre projet ?</h2>
+                        <p>Obtenez une estimation gratuite et personnalisée pour votre futur site vitrine en quelques minutes.</p>
+                        <Link to="/devis" className="btn btn-primary">Démarrer mon devis gratuit</Link>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }

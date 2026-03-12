@@ -75,7 +75,7 @@ export default function PrivacyPolicy() {
               Vos données personnelles sont collectées et traitées pour les finalités suivantes :
             </p>
             <ul>
-              <li>Répondre à vos demandes de contact et de devis</li>
+              <li>Répondre à vos demandes de contact et de commande</li>
               <li>Améliorer nos services et l'expérience utilisateur</li>
               <li>Analyser le trafic du site web</li>
               <li>Respecter nos obligations légales</li>
@@ -87,7 +87,7 @@ export default function PrivacyPolicy() {
             </p>
             <ul>
               <li><strong>Votre consentement</strong> : pour l'envoi de communications marketing</li>
-              <li><strong>L'exécution d'un contrat</strong> : pour traiter vos demandes de devis</li>
+              <li><strong>L'exécution d'un contrat</strong> : pour traiter vos commandes</li>
               <li><strong>Notre intérêt légitime</strong> : pour l'analyse du trafic et l'amélioration de nos services</li>
             </ul>
 

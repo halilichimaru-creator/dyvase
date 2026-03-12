@@ -6,7 +6,6 @@ import Services from './components/Services'
 import Portfolio from './components/Portfolio'
 import About from './components/About'
 import Testimonials from './components/Testimonials'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
 import SEO from './components/SEO/SEO'
 import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton'
@@ -21,8 +20,10 @@ const LegalNotice = lazy(() => import('./pages/LegalNotice'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
 const LocalSEO = lazy(() => import('./pages/LocalSEO'))
 const CreationSiteVitrine = lazy(() => import('./pages/services/CreationSiteVitrine'))
-const CreationSiteEcommerce = lazy(() => import('./pages/services/CreationSiteEcommerce'))
 const AuditSEO = lazy(() => import('./pages/services/AuditSEO'))
+
+// QCM Devis
+const DevisQCM = lazy(() => import('./pages/DevisQCM'))
 
 // Lazy load the 3D scene
 const Scene3D = lazy(() => import('./components/Scene3D/Scene3D'))
@@ -35,7 +36,6 @@ function HomePage() {
       <Portfolio />
       <About />
       <Testimonials />
-      <Contact />
     </>
   )
 }
@@ -79,10 +79,12 @@ function App() {
               <Route path="/politique-confidentialite" element={<PrivacyPolicy />} />
               <Route path="/agence-web-:city" element={<LocalSEO />} />
               <Route path="/services/creation-site-vitrine" element={<CreationSiteVitrine />} />
-              <Route path="/services/creation-site-ecommerce" element={<CreationSiteEcommerce />} />
               <Route path="/services/audit-seo-performance" element={<AuditSEO />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogArticle />} />
+
+              {/* QCM Devis */}
+              <Route path="/devis" element={<DevisQCM />} />
             </Routes>
           </Suspense>
         </main>

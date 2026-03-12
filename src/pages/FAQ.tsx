@@ -8,11 +8,11 @@ const faqs = [
     questions: [
       {
         q: 'Quels types de sites web créez-vous ?',
-        a: 'Nous créons tous types de sites web : sites vitrines, e-commerce, applications web, portfolios, sites institutionnels, et bien plus. Chaque projet est développé sur-mesure selon vos besoins spécifiques.',
+        a: 'Nous créons des sites vitrines sur-mesure et réalisons des refontes de sites existants. Chaque projet est développé selon vos besoins spécifiques pour refléter au mieux votre activité.',
       },
       {
         q: 'Combien de temps faut-il pour créer un site web ?',
-        a: 'Le délai varie selon la complexité du projet. Un site vitrine simple prend 2-4 semaines, tandis qu\'un site e-commerce ou une application web peut nécessiter 6-12 semaines. Nous établissons un planning détaillé dès le début du projet.',
+        a: 'Le délai varie selon la complexité du projet. Un site vitrine simple prend 2-4 semaines, tandis qu\'un projet plus élaboré avec des fonctionnalités avancées peut nécessiter 6-10 semaines. Nous établissons un planning détaillé dès le début du projet.',
       },
       {
         q: 'Travaillez-vous uniquement à Mulhouse ?',
@@ -21,19 +21,19 @@ const faqs = [
     ],
   },
   {
-    category: 'Tarifs & Devis',
+    category: 'Devis & Projets',
     questions: [
       {
-        q: 'Quel est le coût d\'un site web ?',
-        a: 'Les tarifs varient selon la complexité et les fonctionnalités souhaitées. Contactez-nous pour un devis gratuit et personnalisé adapté à votre projet.',
+        q: 'Comment obtenir un devis ?',
+        a: 'C\'est simple ! Rendez-vous sur notre page "Devis Gratuit" et répondez à notre questionnaire rapide (moins de 2 minutes). Nous analyserons vos réponses et vous recontacterons avec une proposition personnalisée.',
       },
       {
         q: 'Proposez-vous des facilités de paiement ?',
         a: 'Oui, nous proposons des échelonnements de paiement adaptés à votre budget. Généralement : 30% à la signature, 40% à mi-parcours, et 30% à la livraison.',
       },
       {
-        q: 'Le devis est-il gratuit ?',
-        a: 'Oui, le devis est entièrement gratuit et sans engagement. Nous prenons le temps d\'analyser vos besoins pour vous proposer une solution adaptée à votre budget.',
+        q: 'Proposez-vous du sur-mesure ?',
+        a: 'Absolument ! Chaque projet est unique. Notre questionnaire en ligne nous permet de bien comprendre vos besoins, et nous vous proposons ensuite une solution entièrement personnalisée avec un devis adapté.',
       },
     ],
   },

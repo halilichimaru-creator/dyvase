@@ -10,9 +10,9 @@ interface SEOProps {
 }
 
 export default function SEO({
-  title = 'Dyvase | Agence Web Mulhouse - Création Site Internet Sur-Mesure',
-  description = 'Agence web à Mulhouse spécialisée en création de sites internet sur-mesure. Design moderne, performances optimales et SEO. Devis gratuit 💬 WhatsApp 06 51 50 41 73',
-  keywords = 'agence web mulhouse, création site internet mulhouse, développement web mulhouse, site web sur mesure',
+  title = 'Dyvase | Agence Web Mulhouse - Création de Site Internet & SEO',
+  description = 'Expert en création de sites vitrines et refontes à Mulhouse. Dyvase est l\'agence web de proximité qui booste votre visibilité locale avec des sites performants et optimisés SEO.',
+  keywords = 'création site internet, site vitrine, agence web, site internet professionnel, création site internet Mulhouse, agence web Mulhouse, site vitrine Mulhouse, référencement SEO Mulhouse, dyvase',
   canonical = 'https://dyvase.com/',
   ogImage = 'https://dyvase.com/images/og-image.jpg',
   jsonLd

@@ -3,10 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import './Header.css'
 
 const navLinks = [
-  { href: '#work', label: 'Sur-mesure' },
-  { href: '#about', label: 'À propos' },
-  { href: '#services', label: 'Services' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/devis', label: 'Devis Gratuit' },
+  { href: '/#work', label: 'Réalisations' },
+  { href: '/#about', label: 'À propos' },
+  { href: '/#services', label: 'Services' },
+  { href: '/devis', label: 'Devis Gratuit' },
 ]
 
 export default function Header() {
@@ -23,7 +24,7 @@ export default function Header() {
   }, [])
 
   return (
-    <motion.header 
+    <motion.header
       className={`header ${isScrolled ? 'header--scrolled' : ''}`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -34,13 +35,13 @@ export default function Header() {
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#A7D7C5"/>
-                <stop offset="50%" stopColor="#C4B5E0"/>
-                <stop offset="100%" stopColor="#F5C7B8"/>
+                <stop offset="0%" stopColor="#A7D7C5" />
+                <stop offset="50%" stopColor="#C4B5E0" />
+                <stop offset="100%" stopColor="#F5C7B8" />
               </linearGradient>
             </defs>
-            <circle cx="20" cy="20" r="18" fill="url(#logoGrad)"/>
-            <path d="M12 12H17C22.5228 12 27 16.4772 27 22C27 27.5228 22.5228 32 17 32H12V12Z" fill="white"/>
+            <circle cx="20" cy="20" r="18" fill="url(#logoGrad)" />
+            <path d="M12 12H17C22.5228 12 27 16.4772 27 22C27 27.5228 22.5228 32 17 32H12V12Z" fill="white" />
           </svg>
           <span className="header__logo-text">Dyvase</span>
         </a>
@@ -48,7 +49,7 @@ export default function Header() {
         <nav className="header__nav">
           <ul className="header__nav-list">
             {navLinks.map((link, index) => (
-              <motion.li 
+              <motion.li
                 key={link.href}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -62,8 +63,8 @@ export default function Header() {
           </ul>
         </nav>
 
-        <motion.a 
-          href="#contact" 
+        <motion.a
+          href="/devis"
           className="btn btn-primary header__cta"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -71,10 +72,10 @@ export default function Header() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Démarrer
+          Devis Gratuit
         </motion.a>
 
-        <button 
+        <button
           className={`header__mobile-toggle ${isMobileMenuOpen ? 'active' : ''}`}
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Ouvrir le menu mobile"
@@ -88,7 +89,7 @@ export default function Header() {
       {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div 
+          <motion.div
             className="header__mobile-menu"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
@@ -98,14 +99,14 @@ export default function Header() {
             <nav className="header__mobile-nav">
               <ul>
                 {navLinks.map((link, index) => (
-                  <motion.li 
+                  <motion.li
                     key={link.href}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.05 * index }}
                   >
-                    <a 
-                      href={link.href} 
+                    <a
+                      href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {link.label}

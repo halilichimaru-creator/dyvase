@@ -5,7 +5,7 @@ import './Footer.css'
 const footerLinks = {
   services: [
     { label: 'Création Site Vitrine', href: '/services/creation-site-vitrine' },
-    { label: 'Site E-commerce', href: '/services/creation-site-ecommerce' },
+    { label: 'Refonte de Site Web', href: '/devis' },
     { label: 'Expert SEO & Performance', href: '/services/audit-seo-performance' },
     { label: 'Design UI/UX', href: '/#services' },
   ],
@@ -22,7 +22,7 @@ const footerLinks = {
     { label: 'Blog', href: '/blog' },
   ],
   support: [
-    { label: 'Contact', href: '/#contact' },
+    { label: 'Devis Gratuit', href: '/devis' },
     { label: 'Confidentialité', href: '/politique-confidentialite' },
     { label: 'Mentions légales', href: '/mentions-legales' },
   ],

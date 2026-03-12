@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import SEO from '../../components/SEO/SEO'
-import Contact from '../../components/Contact/Contact'
 import './ServicePage.css'
 
 export default function AuditSEO() {
@@ -24,7 +24,7 @@ export default function AuditSEO() {
         <div className="service-page">
             <SEO
                 title="Expert SEO Mulhouse | Audit & Performance Web Dyvase"
-                description="Votre site est invisible sur Google ? Dyvase réalise un audit SEO complet et optimise les performances de votre site pour atteindre la première page. Devis gratuit."
+                description="Votre site est invisible sur Google ? Dyvase réalise un audit SEO complet et optimise les performances de votre site pour atteindre la première page. Contactez-nous."
                 keywords="expert SEO mulhouse, audit site web, optimisation performance, referencement naturel alsace"
                 jsonLd={jsonLd}
             />
@@ -88,7 +88,15 @@ export default function AuditSEO() {
                 </div>
             </section>
 
-            <Contact />
+            <section className="service-cta section bg-cream">
+                <div className="container">
+                    <div className="cta-box">
+                        <h2>Besoin de clarifier votre stratégie SEO ?</h2>
+                        <p>Obtenez un audit complet et des conseils personnalisés pour dominer votre marché local.</p>
+                        <Link to="/devis" className="btn btn-primary">Demander mon audit & devis</Link>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
