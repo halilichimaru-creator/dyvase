@@ -1,34 +1,34 @@
 .lead-magnet {
-    padding: 100px 0;
+    padding: var(--space-5xl) 0;
     position: relative;
     overflow: hidden;
-    background: radial-gradient(circle at top right, rgba(var(--primary-rgb), 0.05), transparent 40%),
-                radial-gradient(circle at bottom left, rgba(var(--secondary-rgb), 0.05), transparent 40%);
+    background: radial-gradient(circle at top right, rgba(var(--color-mint-rgb), 0.1), transparent 40%),
+                radial-gradient(circle at bottom left, rgba(var(--color-lavender-rgb), 0.1), transparent 40%);
 }
 
 .lead-magnet__card {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 32px;
-    padding: 60px 40px;
+    border: 1px solid rgba(45, 48, 71, 0.1);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-3xl) var(--space-xl);
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-xl);
     position: relative;
 }
 
 .lead-magnet__badge {
     display: inline-block;
     padding: 6px 16px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    color: white;
+    background: linear-gradient(135deg, var(--color-mint), var(--color-lavender));
+    color: var(--color-text-primary);
     font-size: 0.85rem;
-    font-weight: 600;
-    border-radius: 100px;
-    margin-bottom: 24px;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-lg);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -36,11 +36,12 @@
 .lead-magnet__title {
     font-size: clamp(2rem, 5vw, 2.75rem);
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: var(--space-md);
+    color: var(--color-text-primary);
 }
 
 .lead-magnet__title .highlight {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--color-coral), var(--color-lavender));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -48,16 +49,16 @@
 
 .lead-magnet__description {
     font-size: 1.15rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--color-text-secondary);
     max-width: 600px;
-    margin: 0 auto 40px;
+    margin: 0 auto var(--space-2xl);
     line-height: 1.6;
 }
 
 .lead-magnet__form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--space-md);
     max-width: 650px;
     margin: 0 auto;
 }
@@ -65,51 +66,60 @@
 .form-group-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: var(--space-md);
 }
 
 .lead-input {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
+    background: var(--color-surface);
+    border: 1px solid rgba(45, 48, 71, 0.1);
+    border-radius: var(--radius-md);
     padding: 16px 24px;
-    color: white;
+    color: var(--color-text-primary);
     font-size: 1rem;
-    transition: all 0.3s ease;
+    transition: all var(--transition-base);
     width: 100%;
 }
 
 .lead-input:focus {
     outline: none;
-    border-color: var(--primary);
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 0 0 4px rgba(var(--primary-rgb), 0.1);
+    border-color: var(--color-coral);
+    box-shadow: 0 0 0 4px rgba(248, 180, 164, 0.1);
 }
 
 .lead-submit {
     height: 60px;
-    border-radius: 16px;
+    border-radius: var(--radius-md);
     font-size: 1.1rem;
     font-weight: 600;
     width: 100%;
+    background: var(--color-peach);
+    color: var(--color-text-primary);
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.lead-submit:hover {
+    background: var(--color-coral);
+    transform: translateY(-2px);
 }
 
 .lead-magnet__success {
-    background: rgba(var(--primary-rgb), 0.1);
-    border: 1px solid rgba(var(--primary-rgb), 0.2);
-    border-radius: 20px;
-    padding: 30px;
+    background: rgba(167, 215, 197, 0.1);
+    border: 1px solid var(--color-mint);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: var(--space-md);
 }
 
 .success-icon {
     width: 40px;
     height: 40px;
-    background: var(--primary);
-    color: white;
+    background: var(--color-mint);
+    color: var(--color-text-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -119,9 +129,9 @@
 }
 
 .lead-magnet__privacy {
-    margin-top: 24px;
+    margin-top: var(--space-lg);
     font-size: 0.85rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: var(--color-text-muted);
 }
 
 .error-msg {
