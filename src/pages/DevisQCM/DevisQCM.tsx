@@ -117,10 +117,10 @@ const qcmSteps: QCMStep[] = [
     question: 'Quel est votre délai souhaité pour ce projet ?',
     type: 'radio',
     options: [
-      { value: 'urgent', label: 'Dès que possible (moins d\'un mois)' },
-      { value: '1_3_mois', label: '1 à 3 mois' },
-      { value: '3_6_mois', label: '3 à 6 mois' },
-      { value: 'pas_urgent', label: 'Pas urgent, je me renseigne' },
+      { value: 'urgent', label: 'Dès que possible (2-4 jours)' },
+      { value: '1_semaine', label: '1 semaine (environ)' },
+      { value: '2_semaines', label: '2 semaines (environ)' },
+      { value: 'pas_urgent', label: 'Pas urgent (je me renseigne)' },
     ],
   },
 ]
