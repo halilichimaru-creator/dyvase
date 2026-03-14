@@ -1,5 +1,5 @@
 import { Suspense, lazy, useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -41,8 +41,15 @@ function HomePage() {
   )
 }
 
+declare global {
+  interface Window {
+    gtag: (command: string, targetId: string, config?: any) => void;
+  }
+}
+
 function App() {
   const [showScene, setShowScene] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     // Delay 3D scene loading to prioritize LCP
@@ -55,6 +62,15 @@ function App() {
     }, 8000)
     return () => clearTimeout(timer)
   }, [])
+
+  // Google Analytics Page View Tracking
+  useEffect(() => {
+    if (window.gtag) {
+      window.gtag('config', 'G-SBP7G01P53', {
+        page_path: location.pathname + location.search,
+      })
+    }
+  }, [location])
 
   return (
     <div className="app">
