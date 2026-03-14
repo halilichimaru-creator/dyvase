@@ -23,7 +23,7 @@
 
 /* Content */
 .hero__content {
-  max-width: 600px;
+  max-width: 900px;
 }
 
 .hero__title {
@@ -35,7 +35,7 @@
 }
 
 .hero__title-accent {
-  display: block;
+  display: inline;
   background: linear-gradient(135deg, var(--color-mint) 0%, var(--color-lavender) 50%, var(--color-peach) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

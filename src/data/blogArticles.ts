@@ -88,7 +88,7 @@ export const blogArticles: BlogArticle[] = [
       <p>Le premier réflexe est d'examiner les <strong>projets déjà réalisés</strong> par l'agence. Un portfolio diversifié et de qualité témoigne du savoir-faire et de la créativité de l'équipe. Regardez si les sites sont modernes, rapides et adaptés aux mobiles.</p>
 
       <h3>2. L'expertise technique</h3>
-      <p>Une bonne agence maîtrise les technologies modernes : <strong>React, Next.js, TypeScript</strong>, et les dernieren outils de développement. Elle doit pouvoir vous proposer des solutions performantes et évolutives.</p>
+      <p>Une bonne agence maîtrise les outils les plus performants du marché pour vous garantir une <strong>vitesse de chargement record</strong> et une sécurité totale. Elle doit pouvoir vous proposer des solutions qui ne vieillissent pas et qui s'adaptent à votre croissance.</p>
 
       <h3>3. La méthodologie de travail</h3>
       <p>Renseignez-vous sur le processus de création. Une agence sérieuse vous présentera :</p>
@@ -140,9 +140,9 @@ export const blogArticles: BlogArticle[] = [
       <h2>Les tendances web design qui marquent 2026</h2>
       <p>Le web design évolue constamment, et 2026 apporte son lot d'innovations passionnantes. Des animations 3D immersives aux interfaces minimalistes, découvrez les tendances qui redéfinissent l'expérience utilisateur sur le web.</p>
 
-      <h2>1. Les animations 3D et le WebGL</h2>
-      <p>Les sites web en 2026 transcendent le 2D. Grâce aux technologies comme <strong>Three.js</strong> et <strong>WebGL</strong>, les pages d'accueil s'animent avec des scènes 3D interactives. Ces animations captent l'attention des visiteurs et créent une expérience immersive mémorable.</p>
-      <p>Chez Dyvase, nous utilisons ces technologies pour créer des pages d'accueil qui marquent les esprits dès le premier regard.</p>
+      <h2>1. Les animations immersives</h2>
+      <p>Les sites web en 2026 transcendent le statique. Grâce aux nouvelles méthodes de rendu, les pages d'accueil s'animent avec des scènes fluides et interactives. Ces animations captent l'attention des visiteurs et créent une expérience immersive mémorable sans ralentir votre site.</p>
+      <p>Chez Dyvase, nous créons des pages d'accueil qui marquent les esprits dès le premier regard grâce à une fluidité parfaite.</p>
 
       <h2>2. Le Glassmorphism et le Neomorphism</h2>
       <p>Le <strong>glassmorphism</strong> (effet de verre dépoli) continue de gagner en popularité. Les éléments semi-transparents avec un arrière-plan flou créent une esthétique élégante et moderne. Combiné au neomorphism, ces styles apportent de la profondeur et du réalisme aux interfaces.</p>

@@ -12,9 +12,9 @@ const services = [
         <path d="M16 20H24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
-    title: 'Création Site Vitrine',
-    description: 'Sites web sur-mesure pour artisans et PME. Présentez votre activité avec un design élégant et une performance optimale.',
-    features: ['Design sur-mesure', 'Optimisé SEO', 'Mobile First', 'Maintenance incluse'],
+    title: 'Site Vitrine Record',
+    description: 'Votre site en ligne en un temps record. Plus rapide, plus sécurisé et plus rentable qu\'un site WordPress classique.',
+    features: ['Vitesse Record', 'SEO Natif', 'Mobile Impeccable', 'Prêt à Vendre'],
     color: 'mint',
   },
   {
@@ -28,9 +28,9 @@ const services = [
         <path d="M12 13L16 17L20 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
-    title: 'Refonte de Site Web',
-    description: 'Modernisez votre site existant. Nous repensons le design, améliorons les performances et optimisons l\'expérience utilisateur.',
-    features: ['Redesign moderne', 'Migration sécurisée', 'Performance optimisée', 'SEO renforcé'],
+    title: 'Refonte Express',
+    description: 'Transformez votre vieux site lent en une machine de guerre moderne. Gagnez en vitesse et en visibilité immédiatement.',
+    features: ['Redesign Flash', 'Migration Totale', 'Score 100% Google', 'SEO Boosté'],
     color: 'lavender',
   },
   {
@@ -46,9 +46,9 @@ const services = [
         <circle cx="16" cy="16" r="10" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" />
       </svg>
     ),
-    title: 'Expert SEO & Performance',
-    description: 'Devenez numéro 1 sur Google. Nous optimisons votre visibilité et votre vitesse pour attirer plus de clients.',
-    features: ['Audit complet', 'SEO technique', 'Core Web Vitals', 'Stratégie locale'],
+    title: 'SEO & Vitesse Maximale',
+    description: 'Ne soyez plus jamais en deuxième page. Nous optimisons tout pour que vous soyez le premier choix de vos clients.',
+    features: ['Première Page Google', 'Chargement Instantané', 'Domination Locale', 'Plus de Contacts'],
     color: 'peach',
   },
   {
@@ -60,9 +60,9 @@ const services = [
         <path d="M12 12L20 20M20 12L12 20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
-    title: 'Design UI/UX & Branding',
-    description: 'Marquez les esprits avec une identité visuelle forte et une expérience utilisateur inoubliable.',
-    features: ['Logotypes', 'Charte graphique', 'Expérience utilisateur', 'Maquettes (Figma)'],
+    title: 'Identité Visuelle Forte',
+    description: 'Un design qui inspire confiance et professionnalisme. Démarquez-vous radicalement de vos concurrents.',
+    features: ['Logo Mémorable', 'Image Pro', 'Identité Unique', 'Impact Immédiat'],
     color: 'sky',
   },
 ]

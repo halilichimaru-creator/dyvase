@@ -1,9 +1,14 @@
 import { motion } from 'framer-motion'
+import SEO from '../components/SEO/SEO'
 import './LegalPages.css'
 
 export default function PrivacyPolicy() {
   return (
     <div className="legal-page">
+      <SEO 
+        title="Politique de Confidentialité | Dyvase"
+        description="En savoir plus sur la gestion de vos données personnelles et notre politique de confidentialité chez Dyvase."
+      />
       <section className="legal-hero section">
         <div className="container">
           <motion.div

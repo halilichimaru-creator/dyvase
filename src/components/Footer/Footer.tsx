@@ -4,10 +4,10 @@ import './Footer.css'
 
 const footerLinks = {
   services: [
-    { label: 'Création Site Vitrine', href: '/services/creation-site-vitrine' },
-    { label: 'Refonte de Site Web', href: '/devis' },
-    { label: 'Expert SEO & Performance', href: '/services/audit-seo-performance' },
-    { label: 'Design UI/UX', href: '/#services' },
+    { label: 'Site Vitrine Record', href: '/services/creation-site-vitrine' },
+    { label: 'Refonte Express', href: '/devis' },
+    { label: 'SEO & Vitesse Maximale', href: '/services/audit-seo-performance' },
+    { label: 'Design UI/UX Exceptionnel', href: '/#services' },
   ],
   locations: [
     { label: 'Mulhouse', href: '/agence-web-mulhouse' },
@@ -17,12 +17,12 @@ const footerLinks = {
   ],
   company: [
     { label: 'À propos', href: '/#about' },
-    { label: 'Sur-mesure', href: '/#work' },
-    { label: 'FAQ', href: '/faq' },
-    { label: 'Blog', href: '/blog' },
+    { label: 'Réalisations', href: '/#work' },
+    { label: 'Questions Fréquentes (FAQ)', href: '/faq' },
+    { label: 'Blog & Conseils', href: '/blog' },
   ],
   support: [
-    { label: 'Devis Gratuit', href: '/devis' },
+    { label: 'Estimation Gratuite', href: '/devis' },
     { label: 'Confidentialité', href: '/politique-confidentialite' },
     { label: 'Mentions légales', href: '/mentions-legales' },
   ],
@@ -59,7 +59,7 @@ export default function Footer() {
               <span>Dyvase</span>
             </a>
             <p className="footer__tagline">
-              Créer des expériences digitales qui inspirent et transforment les entreprises.
+              Nous créons les sites web les plus rapides du marché pour transformer vos visiteurs en clients en un temps record.
             </p>
 
           </motion.div>

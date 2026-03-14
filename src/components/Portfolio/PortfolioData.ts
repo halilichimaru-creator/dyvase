@@ -15,18 +15,18 @@ export interface CaseStudy {
 export const caseStudies: CaseStudy[] = [
     {
         id: 'mp-carrelage',
-        title: 'Site Vitrine Haute Performance',
+        title: 'Site Vitrine Performance Record',
         client: 'MP Carrelage',
         location: 'Mulhouse',
         category: 'Artisanat',
         image: '/images/maquette-mp-carrelage.jpg',
-        alt: 'Création site vitrine Mulhouse - Maquette MP Carrelage par Dyvase',
+        alt: 'Création site vitrine Mulhouse - Performance Record MP Carrelage par Dyvase',
         challenge: 'Un artisan talentueux mais invisible en ligne, manquant de moyens pour présenter ses réalisations de manière professionnelle.',
-        solution: 'Création d\'un site vitrine moderne avec une galerie optimisée et une structure SEO locale forte pour capter le trafic à Mulhouse.',
+        solution: 'Création d\'un site vitrine ultra-rapide avec une galerie optimisée et un SEO local record pour dominer le trafic à Mulhouse immédiatement.',
         results: [
-            'Visibilité immédiate sur "Artisan carrelage Mulhouse"',
-            'Système de contact simplifié',
-            'Identité de marque renforcée'
+            'Visibilité record sur "Artisan carrelage Mulhouse"',
+            'Chargement instantané sur mobile',
+            'Identité de marque haut de gamme'
         ],
         link: '#'
     },

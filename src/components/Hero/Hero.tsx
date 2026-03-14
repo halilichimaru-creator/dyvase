@@ -35,14 +35,14 @@ export default function Hero() {
           animate="visible"
         >
           <h1 className="hero__title">
-            Votre Agence Web<br />
-            <span className="hero__title-accent">à Mulhouse</span>
+            Le Site Web le Plus Rapide{" "}
+            <span className="hero__title-accent">Livré en Temps Record</span>
           </h1>
 
           <p className="hero__subtitle">
-            Dyvase transforme vos idées en expériences digitales d'exception. 
-            Création de sites vitrines et refontes sur-mesure pour booster 
-            votre visibilité locale à Mulhouse et en Alsace.
+            Oubliez WordPress. Nous créons des sites ultra-performants, 
+            déjà optimisés pour Google et livrés avant vos concurrents. 
+            Zéro jargon, juste des résultats immédiats.
           </p>
 
           <motion.div

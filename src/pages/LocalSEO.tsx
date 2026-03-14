@@ -40,8 +40,8 @@ export default function LocalSEO() {
         )
     }
 
-    const title = `Agence Web ${data.fullName} - Création Site Internet`
-    const description = `Besoin d'un site web à ${data.fullName} ? Dyvase est ${data.description} Contactez-nous pour un accompagnement sur-mesure.`
+    const title = `Agence Web ${data.fullName} | Création Site & SEO`
+    const description = `Besoin d'un site web à ${data.fullName} ? Dyvase crée des sites vitrines performants et optimisés pour le SEO local à ${data.fullName}.`
 
     return (
         <div className="local-seo-page">

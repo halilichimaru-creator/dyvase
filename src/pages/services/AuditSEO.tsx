@@ -37,10 +37,10 @@ export default function AuditSEO() {
                         transition={{ duration: 0.6 }}
                     >
                         <span className="section-label">SEO & Performance</span>
-                        <h1>Audit <span className="text-gradient">SEO Naturel</span> & Technique</h1>
+                        <h1>Audit <span className="text-gradient">SEO Rapide</span> & Performance</h1>
                         <p className="service-hero__subtitle">
-                            Ne laissez pas vos concurrents prendre toute la place. Nous analysons
-                            votre site et mettons en place les actions pour dominer les résultats Google.
+                            Ne laissez pas vos concurrents prendre votre place. Nous livrons des 
+                            audits et des optimisations records pour dominer Google immédiatement.
                         </p>
                     </motion.div>
                 </div>
@@ -50,16 +50,16 @@ export default function AuditSEO() {
                 <div className="container">
                     <div className="service-grid">
                         <div className="service-card">
-                            <h3>Analyse Sémantique</h3>
-                            <p>Recherche des mots-clés les plus rentables pour votre activité et optimisation de vos contenus.</p>
+                            <h3>Première Page Google</h3>
+                            <p>Nous ne nous contentons pas d'analyser. Nous agissons pour vous placer devant vos concurrents là où vos clients vous cherchent.</p>
                         </div>
                         <div className="service-card">
-                            <h3>Core Web Vitals</h3>
-                            <p>Optimisation technique pour atteindre les scores maximums sur Google PageSpeed Insights.</p>
+                            <h3>Vitesse Instantanée</h3>
+                            <p>Un site lent est un site mort. Nous optimisons chaque détail pour que vos pages s'affichent en moins d'une seconde.</p>
                         </div>
                         <div className="service-card">
-                            <h3>Stratégie de Netlinking</h3>
-                            <p>Conseils et mise en place d'actions pour renforcer l'autorité de votre domaine en ligne.</p>
+                            <h3>Domination Locale</h3>
+                            <p>Soyez le premier choix à Mulhouse et sa région. Nous boostons votre visibilité là où ça compte vraiment pour votre chiffre d'affaires.</p>
                         </div>
                     </div>
                 </div>

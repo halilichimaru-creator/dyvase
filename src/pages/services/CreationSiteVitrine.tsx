@@ -37,10 +37,11 @@ export default function CreationSiteVitrine() {
                         transition={{ duration: 0.6 }}
                     >
                         <span className="section-label">Service Premium</span>
-                        <h1>Création de <span className="text-gradient">Site Vitrine</span> sur-mesure</h1>
+                        <h1>Votre Site Vitrine en <span className="text-gradient">Temps Record</span></h1>
                         <p className="service-hero__subtitle">
-                            Votre site vitrine est votre carte de visite digitale. Nous concevons des
-                            interfaces modernes qui captent l'attention et transforment vos visiteurs en clients.
+                            Plus rapide, plus sécurisé et plus rentable qu'un site WordPress. 
+                            Nous créons votre carte de visite digitale ultra-performante pour 
+                            transformer immédiatement vos visiteurs en clients.
                         </p>
                     </motion.div>
                 </div>
@@ -50,16 +51,16 @@ export default function CreationSiteVitrine() {
                 <div className="container">
                     <div className="service-grid">
                         <div className="service-card">
-                            <h3>Design Unique</h3>
-                            <p>Pas de templates. Chaque design est pensé pour refléter l'identité de votre marque et se démarquer de la concurrence.</p>
+                            <h3>Vitesse Record</h3>
+                            <p>Nous livrons votre site en un temps record sans aucun compromis sur la qualité. Soyez en ligne avant vos concurrents.</p>
                         </div>
                         <div className="service-card">
-                            <h3>Vitesse & Performance</h3>
-                            <p>Un site lent fait fuir les clients. Nous optimisons chaque ligne de code pour un chargement instantané.</p>
+                            <h3>Mieux que WordPress</h3>
+                            <p>Oubliez la lenteur et les bugs. Nos sites chargent instantanément et offrent une sécurité totale dès le premier jour.</p>
                         </div>
                         <div className="service-card">
-                            <h3>SEO Ready</h3>
-                            <p>La structure de votre site est pensée dès le départ pour plaire aux algorithmes de Google.</p>
+                            <h3>SEO Natif</h3>
+                            <p>Votre site est construit pour dominer Google. Pas besoin de plugins compliqués, la performance est incluse dans le code.</p>
                         </div>
                     </div>
                 </div>

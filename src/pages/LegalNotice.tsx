@@ -1,9 +1,14 @@
 import { motion } from 'framer-motion'
+import SEO from '../components/SEO/SEO'
 import './LegalPages.css'
 
 export default function LegalNotice() {
   return (
     <div className="legal-page">
+      <SEO 
+        title="Mentions Légales | Dyvase Agence Web Mulhouse"
+        description="Consultez les mentions légales de Dyvase, agence web spécialisée en création de sites internet et SEO à Mulhouse."
+      />
       <section className="legal-hero section">
         <div className="container">
           <motion.div

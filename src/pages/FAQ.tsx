@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
+import SEO from '../components/SEO/SEO'
 import './FAQ.css'
 
 const faqs = [
+// ... (cached for brevity but keep original if not provided in chunk)
   {
     category: 'Général',
     questions: [
@@ -81,8 +83,26 @@ export default function FAQ() {
     setOpenIndex(openIndex === key ? null : key)
   }
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.flatMap(cat => cat.questions).map(item => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a
+      }
+    }))
+  }
+
   return (
     <div className="faq-page">
+      <SEO 
+        title="FAQ | Vos questions sur la création de site & SEO | Dyvase"
+        description="Tout savoir sur la création de votre site internet, les délais, les tarifs et l'optimisation SEO avec Dyvase, votre agence web à Mulhouse."
+        jsonLd={jsonLd}
+      />
       <section className="faq-hero section">
         <div className="container">
           <motion.div

@@ -71,18 +71,17 @@ export default function About() {
           >
             <span className="about__label">À propos de Dyvase</span>
             <h2 className="about__title">
-              Nous transformons vos idées en <span className="text-gradient">expériences digitales</span>
+              L'Alternative Ultra-Rapide à <span className="text-gradient">WordPress</span>
             </h2>
             <p className="about__description">
-              Dyvase est l'agence web de référence à Mulhouse, dédiée à la conception d'expériences 
-              digitales d'exception. Fondée sur la proximité et l'excellence, nous combinons 
-              technologies de pointe et design stratégique pour aider les entreprises d'Alsace 
-              à dominer leur marché numérique.
+              Dyvase est l'agence web nouvelle génération à Mulhouse. Nous ne faisons pas 
+              de sites "standard" lents et mal optimisés. Nous construisons des machines 
+              de guerre digitales qui chargent instantanément et dominent Google.
             </p>
             <p className="about__description">
-              Notre équipe d'experts à Mulhouse travaille main dans la main avec vous pour 
-              livrer des solutions web sur-mesure qui allient esthétisme premium et 
-              performance SEO redoutable.
+              Notre équipe livre votre projet en un temps record pour que vous puissiez 
+              commencer à attirer des clients sans attendre des mois. Pas de blabla technique, 
+              juste de la performance pure.
             </p>
 
             {/* Stats */}
