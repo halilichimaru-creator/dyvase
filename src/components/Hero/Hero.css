@@ -8,26 +8,22 @@
   overflow: hidden;
 }
 
-.hero__container {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-3xl);
-  align-items: center;
-}
-
 @media (min-width: 1024px) {
   .hero__container {
-    grid-template-columns: 1fr 1fr;
+    display: block;
+    position: relative;
   }
 }
 
 /* Content */
 .hero__content {
-  max-width: 900px;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero__title {
-  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-size: clamp(2.5rem, 6.5vw, 4.5rem);
   font-weight: 700;
   line-height: 1;
   margin-bottom: var(--space-lg);
@@ -47,7 +43,7 @@
   line-height: 1.7;
   color: var(--color-text-secondary);
   margin-bottom: var(--space-xl);
-  max-width: 480px;
+  max-width: 700px;
 }
 
 /* CTA Group */
@@ -103,7 +99,14 @@
 
 @media (min-width: 1024px) {
   .hero__visual {
-    min-height: 500px;
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 600px;
+    z-index: 1;
+    pointer-events: none;
   }
 }
 

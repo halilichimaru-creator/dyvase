@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import '../LocalSEO.css'
+import './LocalSEO.css'
 
 type CityData = {
     fullName: string;
@@ -37,17 +37,17 @@ export default function LocalSEOClient({ data }: { data: CityData }) {
                 <div className="container">
                     <div className="local-features__grid">
                         <div className="local-feature-card">
-                            <div className="local-feature-card__icon">🚀</div>
+                            <div className="local-feature-card__icon"></div>
                             <h3>Performance Maximale</h3>
                             <p>Sites ultra-rapides pour offrir la meilleure expérience à vos clients de {data.fullName}.</p>
                         </div>
                         <div className="local-feature-card">
-                            <div className="local-feature-card__icon">🎯</div>
+                            <div className="local-feature-card__icon"></div>
                             <h3>SEO Local Optimisé</h3>
                             <p>Soyez visible on Google quand vos clients recherchent vos services à {data.fullName}.</p>
                         </div>
                         <div className="local-feature-card">
-                            <div className="local-feature-card__icon">📱</div>
+                            <div className="local-feature-card__icon"></div>
                             <h3>Design Mobile-First</h3>
                             <p>Votre site s'adapte parfaitement à tous les écrans, pour ne rater aucun prospect.</p>
                         </div>

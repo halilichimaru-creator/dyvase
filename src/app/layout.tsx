@@ -147,10 +147,32 @@ export default function RootLayout({
                 "opens": "09:00",
                 "closes": "18:00"
               },
+              "review": [
+                {
+                  "@type": "Review",
+                  "author": { "@type": "Person", "name": "Musa Pekcan" },
+                  "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+                  "reviewBody": "Super site internet pour mon entreprise de carrelage, je recommande vivement dyvase ."
+                },
+                {
+                  "@type": "Review",
+                  "author": { "@type": "Person", "name": "Canan Pekcan" },
+                  "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+                  "reviewBody": "Superbe expérience avec dyvase ! Grace à eux ont reçoit plus de 10 devis par mois pour mon entreprise. Je recommande vivement !"
+                },
+                {
+                  "@type": "Review",
+                  "author": { "@type": "Person", "name": "Halil Ichimaru" },
+                  "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+                  "reviewBody": "J'ai fais mon site internet là bas , il était incroyables et ils me l'ony livré en seulement 3 jours !"
+                }
+              ],
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "5",
-                "reviewCount": "1"
+                "reviewCount": "3",
+                "bestRating": "5",
+                "worstRating": "1"
               }
             }),
           }}

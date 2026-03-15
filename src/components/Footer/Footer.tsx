@@ -13,9 +13,9 @@ const footerLinks = {
   ],
   locations: [
     { label: 'Mulhouse', href: '/agence-web-mulhouse' },
+    { label: 'Strasbourg', href: '/agence-web-strasbourg' },
     { label: 'Colmar', href: '/agence-web-colmar' },
     { label: 'Belfort', href: '/agence-web-belfort' },
-    { label: 'Strasbourg', href: '/agence-web-strasbourg' },
   ],
   company: [
     { label: 'À propos', href: '/#about' },

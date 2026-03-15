@@ -37,7 +37,7 @@ export default function Hero() {
           animate="visible"
         >
           <h1 className="hero__title">
-            <span className="hero__title-brand">Dyvase</span> | Agence Web Mulhouse
+            <span className="hero__title-brand">Dyvase</span> | Agence Web Mulhouse{' '}
             <span className="hero__title-accent">Sites Web Ultra-Rapides & SEO</span>
           </h1>
 

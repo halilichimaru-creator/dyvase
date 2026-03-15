@@ -100,3 +100,33 @@
         font-size: 1.75rem;
     }
 }
+
+.local-extra-content {
+    background: white;
+    padding-top: 0;
+}
+
+.rich-text {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: var(--space-3xl);
+}
+
+.rich-text h2 {
+    font-size: 2rem;
+    margin-bottom: var(--space-lg);
+    color: var(--color-text-primary);
+}
+
+.rich-text h3 {
+    font-size: 1.5rem;
+    margin: var(--space-xl) 0 var(--space-md);
+    color: var(--color-text-primary);
+}
+
+.rich-text p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+    color: var(--color-text-secondary);
+}
