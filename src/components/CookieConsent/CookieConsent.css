@@ -1,0 +1,114 @@
+.cookie-consent {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: var(--space-lg);
+  pointer-events: none;
+}
+
+.cookie-consent__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(45, 48, 71, 0.4);
+  backdrop-filter: blur(4px);
+  pointer-events: auto;
+}
+
+.cookie-consent__banner {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--space-xl);
+  pointer-events: auto;
+  animation: slideUp 0.5s ease-out;
+}
+
+.cookie-consent h3 {
+  margin-bottom: var(--space-md);
+  color: var(--color-text-primary);
+}
+
+.cookie-consent p {
+  font-size: 0.9375rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xl);
+}
+
+.cookie-consent__actions {
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.cookie-consent__actions .btn {
+  flex: 1;
+  min-width: 140px;
+}
+
+.cookie-consent__option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-cream-dark);
+}
+
+.cookie-consent__option:last-of-type {
+  border-bottom: none;
+  margin-bottom: var(--space-lg);
+}
+
+.cookie-consent__option-info strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.cookie-consent__option-info p {
+  font-size: 0.8125rem;
+  margin-bottom: 0;
+}
+
+.cookie-consent__option input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  accent-color: var(--color-mint);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--color-text-muted);
+  color: var(--color-text-secondary);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-text-primary);
+  color: var(--color-text-primary);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .cookie-consent {
+    padding: var(--space-md);
+  }
+  .cookie-consent__actions .btn {
+    width: 100%;
+  }
+}

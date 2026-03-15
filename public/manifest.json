@@ -1,0 +1,22 @@
+{
+  "name": "Dyvase - Agence Web Mulhouse",
+  "short_name": "Dyvase",
+  "description": "Agence web à Mulhouse spécialisée en création de sites internet sur-mesure",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDF8F3",
+  "theme_color": "#A7D7C5",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "lang": "fr-FR",
+  "dir": "ltr"
+}
+

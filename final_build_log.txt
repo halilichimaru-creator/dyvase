@@ -1,0 +1,212 @@
+
+> next-dyvase@0.1.0 build
+> next build
+
+ÔÜá Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of C:\Users\halil\package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * C:\Users\halil\Desktop\dyvase save\next-dyvase\package-lock.json
+
+Ôû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 7 errors:
+./Desktop/dyvase save/next-dyvase/src/components/GoogleReviews/GoogleReviews.tsx:5:1
+Module not found: Can't resolve './GoogleReviews.css'
+  3 | import { useEffect } from 'react';
+  4 | import { motion } from 'framer-motion';
+> 5 | import './GoogleReviews.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | const GoogleReviews = () => {
+  8 |   useEffect(() => {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/dyvase save/next-dyvase/src/components/GoogleReviews/GoogleReviews.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/dyvase save/next-dyvase/src/components/GoogleReviews/GoogleReviews.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Desktop/dyvase save/next-dyvase/src/components/Hero/Hero.tsx:4:1
+Module not found: Can't resolve './Hero.css'
+  2 |
+  3 | import { motion } from 'framer-motion'
+> 4 | import './Hero.css'
+    | ^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | const containerVariants = {
+  7 |   hidden: { opacity: 0 },
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/dyvase save/next-dyvase/src/components/Hero/Hero.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/dyvase save/next-dyvase/src/components/Hero/Hero.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Desktop/dyvase save/next-dyvase/src/components/LeadMagnet/LeadMagnet.tsx:6:1
+Module not found: Can't resolve './LeadMagnet.css'
+  4 | import { motion, AnimatePresence } from 'framer-motion'
+  5 | import { supabase } from '@/lib/supabase'
+> 6 | import './LeadMagnet.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 |
+  8 | export default function LeadMagnet() {
+  9 |     const [email, setEmail] = useState('')
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/dyvase save/next-dyvase/src/components/LeadMagnet/LeadMagnet.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/dyvase save/next-dyvase/src/components/LeadMagnet/LeadMagnet.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Desktop/dyvase save/next-dyvase/src/components/Portfolio/Portfolio.tsx:5:1
+Module not found: Can't resolve './Portfolio.css'
+  3 | import Link from 'next/link'
+  4 | import { caseStudies } from './PortfolioData'
+> 5 | import './Portfolio.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function Portfolio() {
+  8 |   return (
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/dyvase save/next-dyvase/src/components/Portfolio/Portfolio.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/dyvase save/next-dyvase/src/components/Portfolio/Portfolio.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Desktop/dyvase save/next-dyvase/src/components/Portfolio/Portfolio.tsx:4:1
+Module not found: Can't resolve './PortfolioData'
+  2 |
+  3 | import Link from 'next/link'
+> 4 | import { caseStudies } from './PortfolioData'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import './Portfolio.css'
+  6 |
+  7 | export default function Portfolio() {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/dyvase save/next-dyvase/src/components/Portfolio/Portfolio.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/dyvase save/next-dyvase/src/components/Portfolio/Portfolio.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Desktop/dyvase save/next-dyvase/src/components/Services/Services.tsx:2:1
+Module not found: Can't resolve './Services.css'
+  1 | import Link from 'next/link'
+> 2 | import './Services.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const services = [
+  5 |   {
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/dyvase save/next-dyvase/src/components/Services/Services.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/dyvase save/next-dyvase/src/components/Services/Services.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+./Desktop/dyvase save/next-dyvase/src/components/WhatsAppButton/WhatsAppButton.tsx:4:1
+Module not found: Can't resolve './WhatsAppButton.css'
+  2 |
+  3 | import { motion } from 'framer-motion'
+> 4 | import './WhatsAppButton.css'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | export default function WhatsAppButton() {
+  7 |     const phoneNumber = '33651504173'
+
+
+
+Import traces:
+  Client Component Browser:
+    ./Desktop/dyvase save/next-dyvase/src/components/WhatsAppButton/WhatsAppButton.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component Browser]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./Desktop/dyvase save/next-dyvase/src/components/WhatsAppButton/WhatsAppButton.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Client Component SSR]
+    ./Desktop/dyvase save/next-dyvase/src/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./Desktop/dyvase save/next-dyvase/src/components/GoogleReviews/GoogleReviews.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./Desktop/dyvase save/next-dyvase/src/components/Hero/Hero.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./Desktop/dyvase save/next-dyvase/src/components/LeadMagnet/LeadMagnet.tsx:6:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./Desktop/dyvase save/next-dyvase/src/components/Portfolio/Portfolio.tsx:5:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./Desktop/dyvase save/next-dyvase/src/components/Portfolio/Portfolio.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./Desktop/dyvase save/next-dyvase/src/components/Services/Services.tsx:2:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
+    at <unknown> (./Desktop/dyvase save/next-dyvase/src/components/WhatsAppButton/WhatsAppButton.tsx:4:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)

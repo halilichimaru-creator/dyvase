@@ -1,0 +1,14 @@
+import { Metadata } from 'next'
+import VitrineClient from './VitrineClient'
+
+export const metadata: Metadata = {
+  title: 'Création Site Vitrine Mulhouse | Agence Web Dyvase',
+  description: 'Besoin d\'un site vitrine performant à Mulhouse ? Dyvase crée des sites sur-mesure ultra-rapides, optimisés pour le SEO et conçus pour convertir vos prospects.',
+  alternates: {
+    canonical: 'https://dyvase.com/services/creation-site-vitrine',
+  },
+}
+
+export default function CreationSiteVitrine() {
+  return <VitrineClient />
+}

@@ -1,0 +1,196 @@
+.lead-magnet {
+    padding: var(--space-5xl) 0;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at top right, rgba(var(--color-mint-rgb), 0.1), transparent 40%),
+                radial-gradient(circle at bottom left, rgba(var(--color-lavender-rgb), 0.1), transparent 40%);
+}
+
+.lead-magnet__card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(45, 48, 71, 0.1);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-3xl) var(--space-xl);
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: var(--shadow-xl);
+    position: relative;
+}
+
+.lead-magnet__badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: linear-gradient(135deg, var(--color-mint), var(--color-lavender));
+    color: var(--color-text-primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-lg);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lead-magnet__title {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    line-height: 1.2;
+    margin-bottom: var(--space-md);
+    color: var(--color-text-primary);
+}
+
+.lead-magnet__title .highlight {
+    background: linear-gradient(135deg, var(--color-coral), var(--color-lavender));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.lead-magnet__description {
+    font-size: 1.15rem;
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto var(--space-2xl);
+    line-height: 1.6;
+}
+
+.lead-magnet__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.form-group-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+}
+
+@media (max-width: 640px) {
+    .form-group-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+.lead-input {
+    background: var(--color-surface);
+    border: 1px solid rgba(45, 48, 71, 0.1);
+    border-radius: var(--radius-md);
+    padding: 16px 24px;
+    color: var(--color-text-primary);
+    font-size: 1rem;
+    transition: all var(--transition-base);
+    width: 100%;
+}
+
+.lead-input:focus {
+    outline: none;
+    border-color: var(--color-coral);
+    box-shadow: 0 0 0 4px rgba(248, 180, 164, 0.1);
+}
+
+.lead-submit {
+    height: 60px;
+    border-radius: var(--radius-md);
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    background: var(--color-peach);
+    color: var(--color-text-primary);
+    border: none;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.lead-submit:hover {
+    background: var(--color-coral);
+    transform: translateY(-2px);
+}
+
+.lead-magnet__success {
+    background: rgba(167, 215, 197, 0.1);
+    border: 1px solid var(--color-mint);
+    border-radius: var(--radius-md);
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.success-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--color-mint);
+    color: var(--color-text-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.lead-magnet__privacy {
+    margin-top: var(--space-lg);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.error-msg {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .lead-magnet {
+        padding: 60px 0;
+    }
+    
+    .lead-magnet__card {
+        padding: 40px 24px;
+    }
+    
+    .form-group-row {
+        grid-template-columns: 1fr;
+    }
+}
+.lead-magnet__linkedin {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid rgba(45, 48, 71, 0.1);
+}
+
+.lead-magnet__linkedin p {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: #0a66c2;
+    color: white !important;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-base);
+}
+
+.linkedin-link:hover {
+    background: #004182;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(10, 102, 194, 0.3);
+}
+
+.linkedin-icon {
+    width: 20px;
+    height: 20px;
+}
