@@ -31,7 +31,7 @@
 }
 
 .hero__title-accent {
-  display: inline;
+  display: block;
   background: linear-gradient(135deg, var(--color-mint) 0%, var(--color-lavender) 50%, var(--color-peach) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
