@@ -23,9 +23,9 @@
 }
 
 .hero__title {
-  font-size: clamp(2.5rem, 6.5vw, 4.5rem);
+  font-size: clamp(2.2rem, 6.5vw, 4.5rem);
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.1;
   margin-bottom: var(--space-lg);
   color: var(--color-text-primary);
 }
@@ -59,12 +59,18 @@
   font-size: 1rem;
 }
 
-/* Stats */
 .hero__stats {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: var(--space-lg);
+  gap: var(--space-md);
+  width: 100%;
+}
+
+@media (min-width: 480px) {
+  .hero__stats {
+    gap: var(--space-lg);
+  }
 }
 
 .hero__stat {

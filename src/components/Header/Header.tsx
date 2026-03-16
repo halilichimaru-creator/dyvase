@@ -27,7 +27,7 @@ export default function Header() {
 
   return (
     <motion.header
-      className={`header ${isScrolled ? 'header--scrolled' : ''}`}
+      className={`header ${isScrolled ? 'header--scrolled' : ''} ${isMobileMenuOpen ? 'header--menu-open' : ''}`}
       role="banner"
       initial={{ y: -100 }}
       animate={{ y: 0 }}

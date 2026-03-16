@@ -21,7 +21,7 @@ export default function LegalNotice() {
           <p>Le site internet <strong>dyvase.com</strong> est édité par l'entreprise individuelle Dyvase.</p>
           <ul>
             <li><strong>Siège social :</strong> 142 avenue dmc, 68100 Mulhouse, France</li>
-            <li><strong>Numéro SIRET :</strong> 93019803100010</li>
+            <li><strong>Numéro SIRET :</strong> 99996836500018</li>
             <li><strong>Contact :</strong> dyvase.contact@gmail.com</li>
             <li><strong>Téléphone :</strong> 06 51 50 41 73</li>
           </ul>
