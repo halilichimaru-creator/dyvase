@@ -42,7 +42,7 @@ export default function BlogClient() {
                     width={800} 
                     height={500} 
                     style={{ objectFit: 'cover' }}
-                    loading="lazy" 
+                    priority={index === 0}
                   />
                   <span className="blog-card__category">{post.category}</span>
                 </div>

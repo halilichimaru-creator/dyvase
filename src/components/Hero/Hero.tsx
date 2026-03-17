@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import './Hero.css'
 
 const containerVariants = {
@@ -37,7 +38,7 @@ export default function Hero() {
           animate="visible"
         >
           <h1 className="hero__title">
-            <span className="hero__title-brand">Agence Web Mulhouse</span> – 
+            <Link href="/agence-web-mulhouse" className="hero__title-brand hover-underline">Agence Web Mulhouse</Link> – 
             <span className="hero__title-accent">Création de Sites & SEO</span>
           </h1>
 

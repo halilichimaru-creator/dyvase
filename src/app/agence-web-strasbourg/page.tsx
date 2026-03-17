@@ -5,9 +5,23 @@ export async function generateMetadata(): Promise<Metadata> {
     return {
         title: 'Agence Web Strasbourg – Création de Site & SEO | Dyvase',
         description: 'Besoin d\'un site web à Strasbourg ? Dyvase crée des sites vitrines performants, ultra-rapides et optimisés pour le SEO local dans l\'Eurométropole.',
+        keywords: 'agence web strasbourg, création site internet strasbourg, SEO local strasbourg, développeur web strasbourg, site vitrine strasbourg, agence digitale 67',
         alternates: {
             canonical: 'https://dyvase.com/agence-web-strasbourg'
-        }
+        },
+        openGraph: {
+            title: 'Agence Web Strasbourg – Création de Site & SEO | Dyvase',
+            description: 'Besoin d\'un site web à Strasbourg ? Dyvase crée des sites vitrines performants, ultra-rapides et optimisés pour le SEO local.',
+            url: 'https://dyvase.com/agence-web-strasbourg',
+            siteName: 'Dyvase',
+            locale: 'fr_FR',
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: 'Agence Web Strasbourg – Création de Site & SEO',
+            description: 'Dyvase crée des sites vitrines performants et optimisés pour le SEO local dans l\'Eurométropole.',
+        },
     }
 }
 
@@ -38,9 +52,100 @@ export default function Page() {
                         <p>
                             En choisissant Dyvase, vous bénéficiez d'une approche sur-mesure. Pas de templates pré-conçus ou de solutions "one size fits all". Nous analysons vos besoins spécifiques, vos concurrents locaux à Strasbourg et vos objectifs de conversion pour livrer un produit fini qui dépasse vos attentes. Notre proximité géographique entre Mulhouse et Strasbourg nous permet d'être réactifs et de comprendre parfaitement les enjeux de la région.
                         </p>
+
+                        <h3>Questions Fréquentes (FAQ) - Création de site à Strasbourg</h3>
+                        <div className="local-faq">
+                            <div className="local-faq-item">
+                                <strong>Quel est le tarif pour la création d'un site web à Strasbourg ?</strong>
+                                <p>Le tarif d'un site vitrine sur-mesure avec des performances optimales démarre aux alentours de 1000€. Ce prix comprend le design, le développement technique et une base SEO locale solide pour vous positionner dans l'Eurométropole.</p>
+                            </div>
+                            <div className="local-faq-item">
+                                <strong>Proposez-vous la refonte de sites internet existants ?</strong>
+                                <p>Oui, nous sommes spécialisés dans la refonte de sites vieillissants ou lents (souvent sous WordPress). Nous repensons totalement l'architecture pour offrir un site Next.js ultra-rapide et sécurisé qui convertit vos visiteurs strasbourgeois.</p>
+                            </div>
+                            <div className="local-faq-item">
+                                <strong>Comment garantissez-vous mon référencement local à Strasbourg ?</strong>
+                                <p>Le SEO est intégré dès la conception du site. Nous optimisons le maillage interne, la sémantique de vos pages, les balises de données structurées et la vitesse de chargement pour correspondre exactement aux critères de l'algorithme Google pour la région de Strasbourg.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@graph": [
+                            {
+                                "@type": "WebDesignCompany",
+                                "name": "Dyvase - Agence Web Strasbourg",
+                                "url": "https://dyvase.com/agence-web-strasbourg",
+                                "logo": "https://dyvase.com/logo-header.png",
+                                "image": "https://dyvase.com/og-image.png",
+                                "description": "L'agence web Dyvase, experte en création de sites internet ultra-rapides et optimisation SEO local dans l'Eurométropole de Strasbourg.",
+                                "areaServed": {
+                                    "@type": "City",
+                                    "name": "Strasbourg",
+                                    "sameAs": "https://fr.wikipedia.org/wiki/Strasbourg"
+                                },
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "addressLocality": "Strasbourg",
+                                    "addressRegion": "Grand Est",
+                                    "addressCountry": "FR"
+                                }
+                            },
+                            {
+                                "@type": "FAQPage",
+                                "mainEntity": [
+                                    {
+                                        "@type": "Question",
+                                        "name": "Quel est le tarif pour la création d'un site web à Strasbourg ?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "Le tarif d'un site vitrine sur-mesure avec des performances optimales démarre aux alentours de 1000€. Ce prix comprend le design, le développement technique et une base SEO locale solide pour vous positionner dans l'Eurométropole."
+                                        }
+                                    },
+                                    {
+                                        "@type": "Question",
+                                        "name": "Proposez-vous la refonte de sites internet existants ?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "Oui, nous sommes spécialisés dans la refonte de sites vieillissants ou lents (souvent sous WordPress). Nous repensons totalement l'architecture pour offrir un site Next.js ultra-rapide et sécurisé qui convertit vos visiteurs strasbourgeois."
+                                        }
+                                    },
+                                    {
+                                        "@type": "Question",
+                                        "name": "Comment garantissez-vous mon référencement local à Strasbourg ?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "Le SEO est intégré dès la conception du site. Nous optimisons le maillage interne, la sémantique de vos pages, les balises de données structurées et la vitesse de chargement pour correspondre exactement aux critères de l'algorithme Google pour la région de Strasbourg."
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "@type": "BreadcrumbList",
+                                "itemListElement": [
+                                    {
+                                        "@type": "ListItem",
+                                        "position": 1,
+                                        "name": "Accueil",
+                                        "item": "https://dyvase.com"
+                                    },
+                                    {
+                                        "@type": "ListItem",
+                                        "position": 2,
+                                        "name": "Agence Web Strasbourg",
+                                        "item": "https://dyvase.com/agence-web-strasbourg"
+                                    }
+                                ]
+                            }
+                        ]
+                    })
+                }}
+            />
         </div>
     )
 }

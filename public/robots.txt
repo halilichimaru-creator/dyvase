@@ -22,9 +22,6 @@ Allow: /
 # General Crawlers
 User-agent: *
 Allow: /
-Disallow: /mentions-legales
-Disallow: /politique-confidentialite
-Disallow: /cgv
 
 # Sitemap
 Sitemap: https://dyvase.com/sitemap.xml

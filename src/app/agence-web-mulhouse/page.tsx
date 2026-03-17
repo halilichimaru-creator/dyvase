@@ -5,9 +5,23 @@ export async function generateMetadata(): Promise<Metadata> {
     return {
         title: 'Agence Web Mulhouse – Création de Site & SEO | Dyvase',
         description: 'Dyvase est votre agence web de référence à Mulhouse. Spécialiste en création de sites internet ultra-rapides et en SEO local pour booster votre business en Alsace.',
+        keywords: 'agence web mulhouse, création site internet mulhouse, SEO local mulhouse, développeur web mulhouse, site vitrine mulhouse, agence digitale 68',
         alternates: {
             canonical: 'https://dyvase.com/agence-web-mulhouse'
-        }
+        },
+        openGraph: {
+            title: 'Agence Web Mulhouse – Création de Site & SEO | Dyvase',
+            description: 'Dyvase est votre agence web de référence à Mulhouse. Spécialiste en création de sites internet et en SEO local.',
+            url: 'https://dyvase.com/agence-web-mulhouse',
+            siteName: 'Dyvase',
+            locale: 'fr_FR',
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: 'Agence Web Mulhouse – Création de Site & SEO | Dyvase',
+            description: 'Spécialiste en création de sites internet ultra-rapides et en SEO local en Alsace.',
+        },
     }
 }
 
@@ -38,9 +52,100 @@ export default function Page() {
                         <p>
                             En plus de la création, nous offrons un accompagnement complet incluant l'optimisation SEO continue, l'hébergement haute performance et la maintenance. Nous croyons en une relation de proximité avec nos clients mulhousiens : nous sommes disponibles pour discuter de vos projets autour d'un café et adapter nos solutions à vos ambitions. Transformez votre présence digitale avec Dyvase, votre partenaire de confiance à Mulhouse.
                         </p>
+
+                        <h3>Questions Fréquentes (FAQ) - Création de site à Mulhouse</h3>
+                        <div className="local-faq">
+                            <div className="local-faq-item">
+                                <strong>Quel est le prix pour créer un site internet à Mulhouse ?</strong>
+                                <p>Le prix d'un site internet varie selon sa complexité. Chez Dyvase, nous proposons des sites vitrines performants et optimisés SEO à partir d'environ 1000€. Chaque projet est sur-mesure pour s'adapter à votre budget et à vos objectifs de croissance dans le Haut-Rhin.</p>
+                            </div>
+                            <div className="local-faq-item">
+                                <strong>Combien de temps faut-il pour créer le site de mon entreprise ?</strong>
+                                <p>Pour un site vitrine professionnel de qualité, il faut compter entre 2 et 4 semaines. Ce délai inclut la conception, le développement ultra-rapide et l'optimisation pour le référencement local à Mulhouse.</p>
+                            </div>
+                            <div className="local-faq-item">
+                                <strong>Puis-je vous rencontrer physiquement à Mulhouse ?</strong>
+                                <p>Absolument ! Notre agence web est basée en région mulhousienne. Nous privilégions les rencontres physiques avec nos clients du 68 pour mieux comprendre leur activité et construire une stratégie digitale efficace de proximité.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@graph": [
+                            {
+                                "@type": "WebDesignCompany",
+                                "name": "Dyvase - Agence Web Mulhouse",
+                                "url": "https://dyvase.com/agence-web-mulhouse",
+                                "logo": "https://dyvase.com/logo-header.png",
+                                "image": "https://dyvase.com/og-image.png",
+                                "description": "L'agence web Dyvase, experte en création de sites internet ultra-rapides et optimisation SEO local à Mulhouse et dans le Haut-Rhin.",
+                                "areaServed": {
+                                    "@type": "City",
+                                    "name": "Mulhouse",
+                                    "sameAs": "https://fr.wikipedia.org/wiki/Mulhouse"
+                                },
+                                "address": {
+                                    "@type": "PostalAddress",
+                                    "addressLocality": "Mulhouse",
+                                    "addressRegion": "Grand Est",
+                                    "addressCountry": "FR"
+                                }
+                            },
+                            {
+                                "@type": "FAQPage",
+                                "mainEntity": [
+                                    {
+                                        "@type": "Question",
+                                        "name": "Quel est le prix pour créer un site internet à Mulhouse ?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "Le prix d'un site internet varie selon sa complexité. Chez Dyvase, nous proposons des sites vitrines performants et optimisés SEO à partir d'environ 1000€. Chaque projet est sur-mesure pour s'adapter à votre budget et à vos objectifs de croissance dans le Haut-Rhin."
+                                        }
+                                    },
+                                    {
+                                        "@type": "Question",
+                                        "name": "Combien de temps faut-il pour créer le site de mon entreprise ?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "Pour un site vitrine professionnel de qualité, il faut compter entre 2 et 4 semaines. Ce délai inclut la conception, le développement ultra-rapide et l'optimisation pour le référencement local à Mulhouse."
+                                        }
+                                    },
+                                    {
+                                        "@type": "Question",
+                                        "name": "Puis-je vous rencontrer physiquement à Mulhouse ?",
+                                        "acceptedAnswer": {
+                                            "@type": "Answer",
+                                            "text": "Absolument ! Notre agence web est basée en région mulhousienne. Nous privilégions les rencontres physiques avec nos clients du 68 pour mieux comprendre leur activité et construire une stratégie digitale efficace de proximité."
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "@type": "BreadcrumbList",
+                                "itemListElement": [
+                                    {
+                                        "@type": "ListItem",
+                                        "position": 1,
+                                        "name": "Accueil",
+                                        "item": "https://dyvase.com"
+                                    },
+                                    {
+                                        "@type": "ListItem",
+                                        "position": 2,
+                                        "name": "Agence Web Mulhouse",
+                                        "item": "https://dyvase.com/agence-web-mulhouse"
+                                    }
+                                ]
+                            }
+                        ]
+                    })
+                }}
+            />
         </div>
     )
 }

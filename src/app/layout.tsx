@@ -20,7 +20,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Dyvase | Agence Web Mulhouse - Création & SEO",
   description: "Expert en création de sites vitrines et SEO à Mulhouse. Boostez votre visibilité locale avec des sites rapides et performants.",
-  keywords: "création site internet, site vitrine, agence web mulhouse, référencement SEO mulhouse, dyvase",
+  keywords: "agence web mulhouse, création site internet mulhouse, site vitrine mulhouse, référencement SEO mulhouse, dyvase, agence digitale alsace, création site web alsace, développeur web mulhouse, SEO local alsace, site internet professionnel",
   metadataBase: new URL("https://dyvase.com/"),
   alternates: {
     canonical: "https://dyvase.com/",

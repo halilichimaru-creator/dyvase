@@ -66,13 +66,14 @@ export default function LocalSEOClient({ data }: { data: CityData }) {
                                 de proposer des stratégies digitales adaptées à votre zone de chalandise.
                             </p>
                             <p>
-                                Que vous ayez besoin d'un site vitrine pour présenter votre activité,
-                                ou d'une refonte complète de votre image de marque, nous sommes là pour vous.
+                                Que vous ayez besoin d'une <Link href="/services/creation-site-vitrine" className="text-gradient hover-underline">création de site vitrine sur-mesure</Link> pour présenter votre activité,
+                                ou d'un <Link href="/services/audit-seo-performance" className="text-gradient hover-underline">audit SEO & performance</Link> pour dépasser vos concurrents
+                                sur Google, nous sommes là pour vous accompagner.
                             </p>
                             <ul className="check-list">
                                 <li>Proximité et réactivité</li>
-                                <li>Design unique (pas de templates génériques)</li>
-                                <li>Accompagnement de A à Z</li>
+                                <li>Design unique, performant et mobile-first</li>
+                                <li>Accompagnement SEO de A à Z</li>
                                 <li>Hébergement et maintenance inclus</li>
                             </ul>
                         </div>

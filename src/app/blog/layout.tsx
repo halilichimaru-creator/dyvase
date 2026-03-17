@@ -4,9 +4,6 @@ import { blogArticles, type BlogArticle } from '../../data/blogArticles'
 export const metadata: Metadata = {
   title: "Blog | Dyvase - Conseils Web, Design & SEO à Mulhouse",
   description: "Découvrez nos articles sur la création de sites web, le design, le SEO et le développement digital. Conseils d'experts pour booster votre présence en ligne.",
-  alternates: {
-    canonical: 'https://dyvase.com/blog',
-  }
 }
 
 export default function Layout({ children }: { children: React.ReactNode }) {

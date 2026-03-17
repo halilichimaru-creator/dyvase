@@ -3,10 +3,11 @@
 import { useState, useEffect } from 'react'
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
-import WhatsAppButton from '@/components/WhatsAppButton/WhatsAppButton'
-import CookieConsent from '@/components/CookieConsent/CookieConsent'
-import LeadMagnet from '@/components/LeadMagnet/LeadMagnet'
 import dynamic from 'next/dynamic'
+
+const WhatsAppButton = dynamic(() => import('@/components/WhatsAppButton/WhatsAppButton'), { ssr: false })
+const CookieConsent = dynamic(() => import('@/components/CookieConsent/CookieConsent'), { ssr: false })
+const LeadMagnet = dynamic(() => import('@/components/LeadMagnet/LeadMagnet'), { ssr: false })
 
 const Scene3D = dynamic(() => import('@/components/Scene3D/Scene3D'), { 
   ssr: false,

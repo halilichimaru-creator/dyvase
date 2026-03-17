@@ -91,10 +91,10 @@ export default function VitrineClient() {
           </div>
           <div className="process-steps">
             {[
-              { step: '01', title: 'Start-up', desc: 'Analyse de vos besoins et de votre marché à Mulhouse.' },
-              { step: '02', title: 'Design', desc: 'Conception d\'une interface unique et percutante.' },
-              { step: '03', title: 'Développement', desc: 'Codage propre et optimisation des performances.' },
-              { step: '04', title: 'Lancement', desc: 'Mise en ligne, indexation Google et formation.' }
+              { step: '01', title: 'Start-up', desc: 'Analyse de vos besoins, de vos cibles et du marché à Mulhouse.' },
+              { step: '02', title: 'Design UX/UI', desc: 'Conception d\'une interface unique, mobile-first et très visuelle.' },
+              { step: '03', title: 'Développement Next.js', desc: 'Codage propre, intégration SEO et optimisation des performances (Core Web Vitals).' },
+              { step: '04', title: 'Lancement', desc: 'Mise en ligne, paramétrage Google Search Console et indexation.' }
             ].map((s, i) => (
               <motion.div 
                 key={i} 
@@ -112,6 +112,83 @@ export default function VitrineClient() {
           </div>
         </div>
       </section>
+
+      <section className="service-content section bg-cream">
+        <div className="container">
+            <div className="text-layout">
+                <h2>Questions Fréquentes - Création de Site Internet</h2>
+                <div className="local-faq">
+                    <div className="local-faq-item">
+                        <strong>Pourquoi privilégier un site sur-mesure (Next.js) plutôt que WordPress ?</strong>
+                        <p>WordPress est lourd, nécessite beaucoup d'extensions et des mises à jour constantes pour rester sécurisé. Avec un site sur-mesure développé sous Next.js, vous bénéficiez de performances de chargement inégalées (critère crucial pour le SEO), d'une sécurité maximale et d'une conception pensée exactement pour vos besoins à vous, sans fioritures.</p>
+                    </div>
+                    <div className="local-faq-item">
+                        <strong>Le site m'appartient-il à 100% ?</strong>
+                        <p>Oui, à la livraison du projet, vous êtes pleinement propriétaire des droits relatifs à la conception visuelle et au contenu de votre site internet. Nous vous transférons les accès nécessaires sans aucun "lock-in" constructeur.</p>
+                    </div>
+                    <div className="local-faq-item">
+                        <strong>Comment sera géré le contenu de mon site vitrine ?</strong>
+                        <p>Même avec un site ultra-personnalisé de haute performance, nous intégrons pour nos clients des éditeurs de contenu simplifiés type CMS Headless (ex: Sanity, Prismic). Vous pouvez ainsi modifier vos textes, ajouter des réalisations ou publier des articles en toute autonomie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                      {
+                          "@type": "Service",
+                          "name": "Création de Site Vitrine",
+                          "provider": {
+                              "@type": "WebDesignCompany",
+                              "name": "Dyvase - Agence Web Mulhouse",
+                              "image": "https://dyvase.com/logo-header.png"
+                          },
+                          "description": "Conception et développement web sur-mesure haute performance pour artisans, PME et indépendants en Alsace. Référencement local inclus.",
+                          "areaServed": {
+                              "@type": "Region",
+                              "name": "Alsace"
+                          },
+                          "url": "https://dyvase.com/services/creation-site-vitrine"
+                      },
+                      {
+                          "@type": "FAQPage",
+                          "mainEntity": [
+                              {
+                                  "@type": "Question",
+                                  "name": "Pourquoi privilégier un site sur-mesure (Next.js) plutôt que WordPress ?",
+                                  "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "Avec un site sur-mesure développé sous Next.js, vous bénéficiez de performances de chargement inégalées, d'une sécurité maximale et d'une conception pensée exactement pour vos besoins."
+                                  }
+                              },
+                              {
+                                  "@type": "Question",
+                                  "name": "Le site m'appartient-il à 100% ?",
+                                  "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "Oui, à la livraison du projet, vous êtes pleinement propriétaire des droits. Nous vous transférons les accès sans aucun blocage."
+                                  }
+                              },
+                              {
+                                  "@type": "Question",
+                                  "name": "Comment sera géré le contenu de mon site vitrine ?",
+                                  "acceptedAnswer": {
+                                      "@type": "Answer",
+                                      "text": "Nous intégrons des éditeurs de contenu simplifiés type CMS Headless. Vous pouvez modifier vos textes et ajouter des réalisations en autonomie."
+                                  }
+                              }
+                          ]
+                      }
+                  ]
+              })
+          }}
+      />
     </div>
   )
 }

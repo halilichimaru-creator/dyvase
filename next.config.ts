@@ -10,14 +10,7 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
-    return [
-      // Keep support for the old dynamic folder literal name if it was ever indexed or linked
-      {
-        source: '/agence-web-[city]',
-        destination: '/',
-        permanent: true,
-      }
-    ]
+    return []
   }
 };
 
