@@ -103,14 +103,14 @@ export default function AuditClient() {
                                 "provider": {
                                     "@type": "WebDesignCompany",
                                     "name": "Dyvase - Agence Web Mulhouse",
-                                    "image": "https://dyvase.com/logo-header.png"
+                                    "image": "https://www.dyvase.com/logo-header.png"
                                 },
                                 "description": "Analyse approfondie (technique, sémantique, liens externes) et optimisation des performances Core Web Vitals de votre site.",
                                 "areaServed": {
                                     "@type": "Region",
                                     "name": "Alsace"
                                 },
-                                "url": "https://dyvase.com/services/audit-seo-performance"
+                                "url": "https://www.dyvase.com/services/audit-seo-performance"
                             },
                             {
                                 "@type": "FAQPage",

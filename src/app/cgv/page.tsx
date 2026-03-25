@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Conditions Générales de Vente | Dyvase Mulhouse',
   description: 'Consultez les conditions générales de vente de Dyvase, agence web à Mulhouse. Détails sur les commandes, paiements et droits.',
   alternates: {
-    canonical: 'https://dyvase.com/cgv',
+    canonical: 'https://www.dyvase.com/cgv',
   },
 }
 

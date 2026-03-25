@@ -4,19 +4,19 @@
   
   <!-- Pages Principales -->
   <url>
-    <loc>https://dyvase.com/</loc>
+    <loc>https://www.dyvase.com/</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/devis</loc>
+    <loc>https://www.dyvase.com/devis</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/faq</loc>
+    <loc>https://www.dyvase.com/faq</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -24,13 +24,13 @@
 
   <!-- Pages de Services -->
   <url>
-    <loc>https://dyvase.com/services/creation-site-vitrine</loc>
+    <loc>https://www.dyvase.com/services/creation-site-vitrine</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/services/audit-seo-performance</loc>
+    <loc>https://www.dyvase.com/services/audit-seo-performance</loc>
     <lastmod>2026-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -38,25 +38,25 @@
 
   <!-- Pages Locales (SEO Local) -->
   <url>
-    <loc>https://dyvase.com/agence-web-mulhouse</loc>
+    <loc>https://www.dyvase.com/agence-web-mulhouse</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/agence-web-strasbourg</loc>
+    <loc>https://www.dyvase.com/agence-web-strasbourg</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/agence-web-colmar</loc>
+    <loc>https://www.dyvase.com/agence-web-colmar</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/agence-web-belfort</loc>
+    <loc>https://www.dyvase.com/agence-web-belfort</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -64,64 +64,84 @@
 
   <!-- Blog -->
   <url>
-    <loc>https://dyvase.com/blog</loc>
+    <loc>https://www.dyvase.com/blog</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/blog/pourquoi-site-web-professionnel-indispensable-2026</loc>
+    <loc>https://www.dyvase.com/blog/pourquoi-site-web-professionnel-indispensable-2026</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/blog/comment-choisir-agence-web-mulhouse</loc>
+    <loc>https://www.dyvase.com/blog/comment-choisir-agence-web-mulhouse</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/blog/tendances-web-design-2026</loc>
+    <loc>https://www.dyvase.com/blog/tendances-web-design-2026</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/blog/seo-local-visibilite-mulhouse</loc>
+    <loc>https://www.dyvase.com/blog/seo-local-visibilite-mulhouse</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/blog/combien-coute-site-internet-professionnel</loc>
+    <loc>https://www.dyvase.com/blog/combien-coute-site-internet-professionnel</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/blog/erreurs-creation-site-internet</loc>
+    <loc>https://www.dyvase.com/blog/erreurs-creation-site-internet</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/blog/importance-responsive-design-entreprise</loc>
+    <loc>https://www.dyvase.com/blog/importance-responsive-design-entreprise</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/blog/comment-seo-peut-transformer-votre-business</loc>
+    <loc>https://www.dyvase.com/blog/comment-seo-peut-transformer-votre-business</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dyvase.com/blog/pourquoi-agence-web-plutot-que-freelance</loc>
+    <loc>https://www.dyvase.com/blog/pourquoi-agence-web-plutot-que-freelance</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Pages Légales -->
+  <url>
+    <loc>https://www.dyvase.com/cgv</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.dyvase.com/mentions-legales</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.dyvase.com/politique-confidentialite</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>

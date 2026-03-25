@@ -21,12 +21,12 @@ export const metadata: Metadata = {
   title: "Dyvase | Agence Web Mulhouse - Création & SEO",
   description: "Expert en création de sites vitrines et SEO à Mulhouse. Boostez votre visibilité locale avec des sites rapides et performants.",
   keywords: "agence web mulhouse, création site internet mulhouse, site vitrine mulhouse, référencement SEO mulhouse, dyvase, agence digitale alsace, création site web alsace, développeur web mulhouse, SEO local alsace, site internet professionnel",
-  metadataBase: new URL("https://dyvase.com/"),
+  metadataBase: new URL("https://www.dyvase.com/"),
   alternates: {
-    canonical: "https://dyvase.com/",
+    canonical: "https://www.dyvase.com/",
     languages: {
-      "fr": "https://dyvase.com/",
-      "x-default": "https://dyvase.com/",
+      "fr": "https://www.dyvase.com/",
+      "x-default": "https://www.dyvase.com/",
     },
   },
   robots: "index, follow, max-image-preview:large, max-snippet:160, max-video-preview:-1",
@@ -38,11 +38,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dyvase | Agence Web Mulhouse - Création & SEO",
     description: "Expert en création de sites vitrines et SEO à Mulhouse. Boostez votre visibilité locale avec des sites rapides et performants.",
-    url: "https://dyvase.com/",
+    url: "https://www.dyvase.com/",
     siteName: "Dyvase",
     images: [
       {
-        url: "https://dyvase.com/images/og-image.png",
+        url: "https://www.dyvase.com/images/og-image.png",
         width: 1200,
         height: 630,
       },
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Dyvase | Agence Web Mulhouse - Création & SEO",
     description: "Expert en création de sites vitrines et SEO à Mulhouse. Boostez votre visibilité locale avec des sites rapides et performants.",
-    images: ["https://dyvase.com/images/og-image.png"],
+    images: ["https://www.dyvase.com/images/og-image.png"],
   },
   other: {
     "geo.region": "FR-68",
@@ -85,8 +85,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Dyvase",
-              "url": "https://dyvase.com",
-              "logo": "https://dyvase.com/favicon.svg",
+              "url": "https://www.dyvase.com",
+              "logo": "https://www.dyvase.com/favicon.svg",
               "sameAs": [
                 "https://www.linkedin.com/in/dyvase-agence-40a5b13b7/"
               ],
@@ -116,9 +116,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Dyvase - Agence Web Mulhouse",
-              "image": "https://dyvase.com/favicon.svg",
-              "@id": "https://dyvase.com",
-              "url": "https://dyvase.com",
+              "image": "https://www.dyvase.com/favicon.svg",
+              "@id": "https://www.dyvase.com",
+              "url": "https://www.dyvase.com",
               "sameAs": [
                 "https://www.linkedin.com/in/dyvase-agence-40a5b13b7/"
               ],

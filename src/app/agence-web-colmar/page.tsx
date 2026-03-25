@@ -7,12 +7,12 @@ export async function generateMetadata(): Promise<Metadata> {
         description: 'Votre expert en création de sites internet à Colmar. Dyvase accompagne les entreprises du Haut-Rhin avec des solutions digitales ultra-rapides et un SEO local performant.',
         keywords: 'agence web colmar, création site internet colmar, SEO local colmar, développeur web colmar, site vitrine colmar, agence digitale haut-rhin',
         alternates: {
-            canonical: 'https://dyvase.com/agence-web-colmar'
+            canonical: 'https://www.dyvase.com/agence-web-colmar'
         },
         openGraph: {
             title: 'Agence Web Colmar – Création de Site & SEO | Dyvase',
             description: 'Votre expert en création de sites internet à Colmar. Solutions digitales ultra-rapides et SEO local.',
-            url: 'https://dyvase.com/agence-web-colmar',
+            url: 'https://www.dyvase.com/agence-web-colmar',
             siteName: 'Dyvase',
             locale: 'fr_FR',
             type: 'website',
@@ -80,9 +80,9 @@ export default function Page() {
                             {
                                 "@type": "WebDesignCompany",
                                 "name": "Dyvase - Agence Web Colmar",
-                                "url": "https://dyvase.com/agence-web-colmar",
-                                "logo": "https://dyvase.com/logo-header.png",
-                                "image": "https://dyvase.com/og-image.png",
+                                "url": "https://www.dyvase.com/agence-web-colmar",
+                                "logo": "https://www.dyvase.com/logo-header.png",
+                                "image": "https://www.dyvase.com/og-image.png",
                                 "description": "L'agence web Dyvase, experte en création de sites internet ultra-rapides et optimisation SEO local à Colmar et dans tout le centre du Haut-Rhin.",
                                 "areaServed": {
                                     "@type": "City",
@@ -132,13 +132,13 @@ export default function Page() {
                                         "@type": "ListItem",
                                         "position": 1,
                                         "name": "Accueil",
-                                        "item": "https://dyvase.com"
+                                        "item": "https://www.dyvase.com"
                                     },
                                     {
                                         "@type": "ListItem",
                                         "position": 2,
                                         "name": "Agence Web Colmar",
-                                        "item": "https://dyvase.com/agence-web-colmar"
+                                        "item": "https://www.dyvase.com/agence-web-colmar"
                                     }
                                 ]
                             }

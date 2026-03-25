@@ -7,12 +7,12 @@ export async function generateMetadata(): Promise<Metadata> {
         description: 'Dyvase est votre agence web de référence à Mulhouse. Spécialiste en création de sites internet ultra-rapides et en SEO local pour booster votre business en Alsace.',
         keywords: 'agence web mulhouse, création site internet mulhouse, SEO local mulhouse, développeur web mulhouse, site vitrine mulhouse, agence digitale 68',
         alternates: {
-            canonical: 'https://dyvase.com/agence-web-mulhouse'
+            canonical: 'https://www.dyvase.com/agence-web-mulhouse'
         },
         openGraph: {
             title: 'Agence Web Mulhouse – Création de Site & SEO | Dyvase',
             description: 'Dyvase est votre agence web de référence à Mulhouse. Spécialiste en création de sites internet et en SEO local.',
-            url: 'https://dyvase.com/agence-web-mulhouse',
+            url: 'https://www.dyvase.com/agence-web-mulhouse',
             siteName: 'Dyvase',
             locale: 'fr_FR',
             type: 'website',
@@ -80,9 +80,9 @@ export default function Page() {
                             {
                                 "@type": "WebDesignCompany",
                                 "name": "Dyvase - Agence Web Mulhouse",
-                                "url": "https://dyvase.com/agence-web-mulhouse",
-                                "logo": "https://dyvase.com/logo-header.png",
-                                "image": "https://dyvase.com/og-image.png",
+                                "url": "https://www.dyvase.com/agence-web-mulhouse",
+                                "logo": "https://www.dyvase.com/logo-header.png",
+                                "image": "https://www.dyvase.com/og-image.png",
                                 "description": "L'agence web Dyvase, experte en création de sites internet ultra-rapides et optimisation SEO local à Mulhouse et dans le Haut-Rhin.",
                                 "areaServed": {
                                     "@type": "City",
@@ -132,13 +132,13 @@ export default function Page() {
                                         "@type": "ListItem",
                                         "position": 1,
                                         "name": "Accueil",
-                                        "item": "https://dyvase.com"
+                                        "item": "https://www.dyvase.com"
                                     },
                                     {
                                         "@type": "ListItem",
                                         "position": 2,
                                         "name": "Agence Web Mulhouse",
-                                        "item": "https://dyvase.com/agence-web-mulhouse"
+                                        "item": "https://www.dyvase.com/agence-web-mulhouse"
                                     }
                                 ]
                             }

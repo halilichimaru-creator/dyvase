@@ -147,14 +147,14 @@ export default function VitrineClient() {
                           "provider": {
                               "@type": "WebDesignCompany",
                               "name": "Dyvase - Agence Web Mulhouse",
-                              "image": "https://dyvase.com/logo-header.png"
+                              "image": "https://www.dyvase.com/logo-header.png"
                           },
                           "description": "Conception et développement web sur-mesure haute performance pour artisans, PME et indépendants en Alsace. Référencement local inclus.",
                           "areaServed": {
                               "@type": "Region",
                               "name": "Alsace"
                           },
-                          "url": "https://dyvase.com/services/creation-site-vitrine"
+                          "url": "https://www.dyvase.com/services/creation-site-vitrine"
                       },
                       {
                           "@type": "FAQPage",

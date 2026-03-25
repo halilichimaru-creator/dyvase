@@ -7,12 +7,12 @@ export async function generateMetadata(): Promise<Metadata> {
         description: 'Besoin d\'un site web à Belfort ? Dyvase, agence web de proximité, crée des sites vitrines modernes et optimisés pour le référencement local dans le Territoire de Belfort.',
         keywords: 'agence web belfort, création site internet belfort, SEO local belfort, développeur web belfort, site vitrine belfort, agence digitale 90',
         alternates: {
-            canonical: 'https://dyvase.com/agence-web-belfort'
+            canonical: 'https://www.dyvase.com/agence-web-belfort'
         },
         openGraph: {
             title: 'Agence Web Belfort – Création de Site & SEO | Dyvase',
             description: 'Besoin d\'un site web à Belfort ? Dyvase crée des sites vitrines modernes et optimisés pour le référencement local.',
-            url: 'https://dyvase.com/agence-web-belfort',
+            url: 'https://www.dyvase.com/agence-web-belfort',
             siteName: 'Dyvase',
             locale: 'fr_FR',
             type: 'website',
@@ -80,9 +80,9 @@ export default function Page() {
                             {
                                 "@type": "WebDesignCompany",
                                 "name": "Dyvase - Agence Web Belfort",
-                                "url": "https://dyvase.com/agence-web-belfort",
-                                "logo": "https://dyvase.com/logo-header.png",
-                                "image": "https://dyvase.com/og-image.png",
+                                "url": "https://www.dyvase.com/agence-web-belfort",
+                                "logo": "https://www.dyvase.com/logo-header.png",
+                                "image": "https://www.dyvase.com/og-image.png",
                                 "description": "L'agence web Dyvase de proximité, crée des sites vitrines modernes et optimisés pour le référencement local dans le Territoire de Belfort.",
                                 "areaServed": {
                                     "@type": "City",
@@ -132,13 +132,13 @@ export default function Page() {
                                         "@type": "ListItem",
                                         "position": 1,
                                         "name": "Accueil",
-                                        "item": "https://dyvase.com"
+                                        "item": "https://www.dyvase.com"
                                     },
                                     {
                                         "@type": "ListItem",
                                         "position": 2,
                                         "name": "Agence Web Belfort",
-                                        "item": "https://dyvase.com/agence-web-belfort"
+                                        "item": "https://www.dyvase.com/agence-web-belfort"
                                     }
                                 ]
                             }

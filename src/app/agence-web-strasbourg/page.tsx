@@ -7,12 +7,12 @@ export async function generateMetadata(): Promise<Metadata> {
         description: 'Besoin d\'un site web à Strasbourg ? Dyvase crée des sites vitrines performants, ultra-rapides et optimisés pour le SEO local dans l\'Eurométropole.',
         keywords: 'agence web strasbourg, création site internet strasbourg, SEO local strasbourg, développeur web strasbourg, site vitrine strasbourg, agence digitale 67',
         alternates: {
-            canonical: 'https://dyvase.com/agence-web-strasbourg'
+            canonical: 'https://www.dyvase.com/agence-web-strasbourg'
         },
         openGraph: {
             title: 'Agence Web Strasbourg – Création de Site & SEO | Dyvase',
             description: 'Besoin d\'un site web à Strasbourg ? Dyvase crée des sites vitrines performants, ultra-rapides et optimisés pour le SEO local.',
-            url: 'https://dyvase.com/agence-web-strasbourg',
+            url: 'https://www.dyvase.com/agence-web-strasbourg',
             siteName: 'Dyvase',
             locale: 'fr_FR',
             type: 'website',
@@ -80,9 +80,9 @@ export default function Page() {
                             {
                                 "@type": "WebDesignCompany",
                                 "name": "Dyvase - Agence Web Strasbourg",
-                                "url": "https://dyvase.com/agence-web-strasbourg",
-                                "logo": "https://dyvase.com/logo-header.png",
-                                "image": "https://dyvase.com/og-image.png",
+                                "url": "https://www.dyvase.com/agence-web-strasbourg",
+                                "logo": "https://www.dyvase.com/logo-header.png",
+                                "image": "https://www.dyvase.com/og-image.png",
                                 "description": "L'agence web Dyvase, experte en création de sites internet ultra-rapides et optimisation SEO local dans l'Eurométropole de Strasbourg.",
                                 "areaServed": {
                                     "@type": "City",
@@ -132,13 +132,13 @@ export default function Page() {
                                         "@type": "ListItem",
                                         "position": 1,
                                         "name": "Accueil",
-                                        "item": "https://dyvase.com"
+                                        "item": "https://www.dyvase.com"
                                     },
                                     {
                                         "@type": "ListItem",
                                         "position": 2,
                                         "name": "Agence Web Strasbourg",
-                                        "item": "https://dyvase.com/agence-web-strasbourg"
+                                        "item": "https://www.dyvase.com/agence-web-strasbourg"
                                     }
                                 ]
                             }

@@ -23,10 +23,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         description: article.metaDescription,
         keywords: article.keywords,
         alternates: {
-            canonical: `https://dyvase.com/blog/${article.slug}`,
+            canonical: `https://www.dyvase.com/blog/${article.slug}`,
         },
         openGraph: {
-            images: [`https://dyvase.com${article.image}`],
+            images: [`https://www.dyvase.com${article.image}`],
         }
     }
 }
@@ -45,25 +45,25 @@ export default async function Page({ params }: Props) {
         '@type': 'BlogPosting',
         headline: article.title,
         description: article.metaDescription,
-        image: `https://dyvase.com${article.image}`,
+        image: `https://www.dyvase.com${article.image}`,
         datePublished: article.date,
         dateModified: article.date,
         author: {
             '@type': 'Organization',
             name: 'Dyvase',
-            url: 'https://dyvase.com',
+            url: 'https://www.dyvase.com',
         },
         publisher: {
             '@type': 'Organization',
             name: 'Dyvase',
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://dyvase.com/favicon.svg',
+                url: 'https://www.dyvase.com/favicon.svg',
             },
         },
         mainEntityOfPage: {
             '@type': 'WebPage',
-            '@id': `https://dyvase.com/blog/${article.slug}`,
+            '@id': `https://www.dyvase.com/blog/${article.slug}`,
         },
     }
 

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Politique de Confidentialité | Dyvase Mulhouse',
   description: 'Consultez la politique de confidentialité de Dyvase. Nous nous engageons à protéger vos données personnelles conformément au RGPD.',
   alternates: {
-    canonical: 'https://dyvase.com/politique-confidentialite',
+    canonical: 'https://www.dyvase.com/politique-confidentialite',
   },
 }
 

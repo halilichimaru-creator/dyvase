@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'Agence web à Mulhouse spécialisée en création de sites internet sur-mesure, ultra-rapides et optimisés pour le référencement naturel (SEO). Boostez votre visibilité locale.',
   keywords: 'agence web mulhouse, création site internet mulhouse, site vitrine mulhouse, SEO mulhouse, référencement naturel mulhouse, dyvase, agence digitale alsace, création site web alsace',
   alternates: {
-    canonical: 'https://dyvase.com/',
+    canonical: 'https://www.dyvase.com/',
   },
 }
 

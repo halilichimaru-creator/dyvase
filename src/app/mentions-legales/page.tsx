@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Mentions Légales | Agence Web Dyvase Mulhouse',
   description: 'Informations légales concernant l\'entreprise Dyvase, agence web à Mulhouse. Retrouvez nos coordonnées, SIRET et détails sur l\'hébergement.',
   alternates: {
-    canonical: 'https://dyvase.com/mentions-legales',
+    canonical: 'https://www.dyvase.com/mentions-legales',
   },
 }
 

@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: 'Retrouvez toutes les réponses à vos questions sur la création de site vitrine, le référencement SEO, nos tarifs et notre méthodologie de travail à Mulhouse.',
   keywords: 'FAQ création site web, questions site internet, tarif site vitrine, SEO mulhouse questions, agence web mulhouse FAQ',
   alternates: {
-    canonical: 'https://dyvase.com/faq',
+    canonical: 'https://www.dyvase.com/faq',
   },
   openGraph: {
     title: 'FAQ Dyvase | Réponses sur la Création de Site & SEO Mulhouse',
     description: 'Retrouvez toutes les réponses à vos questions sur la création de site vitrine, le référencement SEO, nos tarifs et notre méthodologie de travail.',
-    url: 'https://dyvase.com/faq',
+    url: 'https://www.dyvase.com/faq',
     siteName: 'Dyvase',
     locale: 'fr_FR',
     type: 'website',
